@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/value_text"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlMyNetPostHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/tvMyNetPostTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Feed"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMyNetPostLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" >
+
+            <LinearLayout
+                android:id="@+id/llMyNetPostMap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etMyNetPostEditbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="post"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="#696969"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <ViewStub
+                    android:id="@+id/vsCheckIn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:inflatedId="@+id/showCheckIn"
+                    android:layout="@layout/mynet_post_checkin"
+                    android:visibility="gone" />
+
+                <ViewStub
+                    android:id="@+id/vsPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:inflatedId="@+id/showPhoto"
+                    android:layout="@layout/mynet_post_photo"
+                    android:visibility="visible" />
+
+                <ViewStub
+                    android:id="@+id/vsCallMemo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:inflatedId="@+id/showCallMemo"
+                    android:layout="@layout/mynet_post_callmemo"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llMyNetPostOption"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlMyNetPostCheckIn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/ivMyNetPostCheckIn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/mynet_post_map" />
+
+                        <ImageView
+                            android:id="@+id/rlMyNetPlus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/ivMyNetPostCheckIn"
+                            android:src="@drawable/ic_launcher"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvMyNetCheckIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/rlMyNetPlus"
+                            android:text="Check In"
+                            android:textColor="#0063A5"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlMyNetPostPhotos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/ivMyNetPostPhoto"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/mynet_post_photo" />
+
+                        <ImageView
+                            android:id="@+id/rlMyNetPlus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/ivMyNetPostPhoto"
+                            android:src="@drawable/ic_launcher"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvMyNetPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/rlMyNetPlus"
+                            android:text="Photo"
+                            android:textColor="#0063A5"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlMyNetPostCallMemo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/ivMyNetPostCallMemo"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/mynet_post_callmemo" />
+
+                        <ImageView
+                            android:id="@+id/rlMyNetPlus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/ivMyNetPostCallMemo"
+                            android:src="@drawable/ic_launcher"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvMyNetCallMemo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/rlMyNetPlus"
+                            android:text="Call Memo"
+                            android:textColor="#B9FFD9"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMyNetPostFooter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/value_text"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlMyNetPostPrivacy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/ivMyNetPostPrivate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock_on" />
+
+                        <ImageView
+                            android:id="@+id/ivMyNetPostPublic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock_off"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlMyNetPostFacebook"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/ivMyNetPostFacebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/facebook_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivMyNetPostMynet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/facebook_off"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlMyNetPostStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="37dp"
+                        android:layout_weight="1"
+                        android:background="#0063A5" >
+
+                        <TextView
+                            android:id="@+id/tvMyNetPostSend"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="Post"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

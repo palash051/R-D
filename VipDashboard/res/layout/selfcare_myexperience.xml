@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/tabHeaderText"
+        android:gravity="center"
+        android:text="Network Summary"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvSelfcareMyExperinceUserTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text=""
+        android:textColor="@color/bottom_hometext_color"
+        android:textSize="12sp"
+        android:textStyle="bold" 
+        android:visibility="gone"/>
+
+      <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="5dp">
+        
+        <ImageView
+                    android:id="@+id/ivDashboardIcon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/performance"
+                    android:visibility="gone" />
+        
+         <TextView
+                android:id="@+id/ivDashboardIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/mydevice_new"
+                android:text="PERFORMANCE"
+                android:textColor="#FFF5FF" />
+        
+        
+        
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="Etisalat"
+                android:textColor="#FFF5FF"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvCompanyCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvCompanyName"
+                android:gravity="right"
+                android:text="United Arab Emirates"
+                android:textColor="#FFF5FF"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMyExperienceDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".65"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" 
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rlMyExperienceSignalStrenght"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvMyExperienceSignalStrenght"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceSignalStrenghtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvMyExperienceSignalStrenght"
+                    android:layout_centerHorizontal="true"
+                    android:text="Signal Strength"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceSignalStrenghtValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyExperienceSignalStrenghtTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="Excelent"
+                    android:textColor="#00B050"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMyExperienceTotalCalls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvMyExperienceTotalCalls"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceTotalCalls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvMyExperienceTotalCalls"
+                    android:layout_centerHorizontal="true"
+                    android:text="Total Calls"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyExperienceTotalCalls"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/ivMyExperienceTotalCallsReceived"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/call_arrow_received" />
+
+                    <TextView
+                        android:id="@+id/tvMyExperienceTotalCallsReceived"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:id="@+id/ivMyExperienceTotalCallsCalled"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/call_arrow_dialed" />
+
+                    <TextView
+                        android:id="@+id/tvMyExperienceTotalCallsCalled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:id="@+id/ivMyExperienceTotalCallsMissed"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/call_arrow_missed" />
+
+                    <TextView
+                        android:id="@+id/tvMyExperienceTotalCallsMissed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMyExperienceSMS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvMyExperienceSMS"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceSMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvMyExperienceSMS"
+                    android:layout_centerHorizontal="true"
+                    android:text="SMS"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyExperienceSMS"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/ivMyExperienceSMSReceived"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/call_arrow_received" />
+
+                    <TextView
+                        android:id="@+id/tvMyExperienceSMSReceived"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:id="@+id/ivMyExperienceSMSSent"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/call_arrow_dialed" />
+
+                    <TextView
+                        android:id="@+id/tvMyExperienceSMSSent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:id="@+id/ivMyExperienceSMSFailed"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/call_arrow_missed" />
+
+                    <TextView
+                        android:id="@+id/tvMyExperienceSMSFailed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rlMyExperienceSetupSuccess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvMyExperienceSetupSuccess"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceSetupSuccessTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvMyExperienceSetupSuccess"
+                    android:layout_centerHorizontal="true"
+                    android:text="Setup Success"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceSetupSuccessValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyExperienceSetupSuccessTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="100%"
+                    android:textColor="#00B050"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMyExperienceDropCalls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvMyExperienceDropCalls"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceDropCalls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvMyExperienceDropCalls"
+                    android:layout_centerHorizontal="true"
+                    android:text="Drop Calls"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceDropCallsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyExperienceDropCalls"
+                    android:layout_centerHorizontal="true"
+                    android:text="0%"
+                    android:textColor="#00B050"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMyExperienceDataSpeed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvMyExperienceDataSpeed"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceDataSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvMyExperienceDataSpeed"
+                    android:layout_centerHorizontal="true"
+                    android:text="Data Speed"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceDataSpeedUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyExperienceDataSpeed"
+                    android:layout_centerHorizontal="true"
+                    android:text="Upload: 220 Kbps"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvMyExperienceDataSpeedDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyExperienceDataSpeedUpload"
+                    android:layout_centerHorizontal="true"
+                    android:text="Download: 200 Kbps"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+         <LinearLayout
+        android:id="@+id/tabExperinceFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".22"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvExperinceFilterHour"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/value_text"
+            android:gravity="center"
+            android:text="This Hour"
+            android:textColor="@color/home_item_bg"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvExperinceFilterToday"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/header_text"
+            android:gravity="center"
+            android:text="Today"
+            android:textColor="@color/home_item_bg"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvExperinceFilterYesterday"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/value_text"
+            android:gravity="center"
+            android:text="Last 24 hours"
+            android:textColor="@color/home_item_bg"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvExperinceFilterWeek"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/value_text"
+            android:gravity="center"
+            android:text="This week"
+            android:textColor="@color/home_item_bg"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+
+   
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/paging_6_1" 
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvExperinceCollaboration"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/mynet_collaboration" />
+
+        <TextView
+            android:id="@+id/tvExperinceDialer"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/mynet_dialer" />
+
+        <TextView
+            android:id="@+id/tvExperinceSMS"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/mynet_sms" />
+
+        <TextView
+            android:id="@+id/tvExperinceMail"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/mynet_massage" />
+
+        <TextView
+            android:id="@+id/tvExperinceMemo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/mynet_memo" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_item_bg"
+    android:orientation="vertical" >
+
+  
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvCheckoutHeadertext"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tool_bar"
+            android:text="@string/payment_by_cash"
+            android:textColor="@color/black"
+             />
+    
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/checkout_background_top" 
+        android:contentDescription="@string/todo">
+    </ImageView>
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/checkoutBarcodeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:text="@string/loading_bon"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/checkout_background_barcode" >
+
+        <ImageView
+            android:id="@+id/checkoutBarcodeImage"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/todo"
+            android:visibility="invisible" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/checkoutBarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkoutBarcodeImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.shopper.app.custom.controls.CustomButton
+        android:id="@+id/cancelBasket"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/cencel_basket_background"
+        android:enabled="true"
+        android:text="@string/exit_bon"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

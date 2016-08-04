@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    tools:context="com.vipdashboard.app.activities.SendNotificationActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlCollaborationMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvCollaborationMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Broadcast Message"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/svSendNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:queryHint="Search" >
+        </SearchView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlCollaborationMainTitle" >
+
+        <RelativeLayout
+            android:id="@+id/rlSpinnerLauout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!--
+                 <TextView
+                android:id="@+id/tvSpinnerTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lavel Name"
+                android:textSize="18sp" />
+            -->
+
+            <Spinner
+                android:id="@+id/spinnerList"
+                style="@style/customtheme"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlUserGroupListLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlSpinnerLauout"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textviewheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add recipients"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/textviewheader"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/lvChatList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:choiceMode="multipleChoice"
+                    android:divider="@color/list_diverder"
+                    android:dividerHeight="1dp"
+                    android:fadingEdge="none"
+                    android:scrollbars="vertical"
+                    android:scrollingCache="false" />
+
+                <RelativeLayout
+                    android:id="@+id/rlMessageSend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bar" >
+
+                    <EditText
+                        android:id="@+id/etMessageText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/bSendMessage"
+                        android:background="#ffffff"
+                        android:hint="Message"
+                        android:inputType="text"
+                        android:maxLength="140"
+                        android:paddingLeft="10dp"
+                         android:textColor="#000000"  
+                         android:textSize="12sp">
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/bSendMessage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/message_send_button" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/sendNotificationProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

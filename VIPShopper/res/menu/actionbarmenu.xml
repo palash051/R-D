@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_search_inverse"
+        android:actionViewClass="com.actionbarsherlock.widget.SearchView"
+        android:title="@string/search"/>
+    
+       
+    <item
+        android:id="@+id/menu_basket_scan"
+        android:actionLayout="@layout/tab_indicator"        
+        android:showAsAction="always"
+        android:title=""/>
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/tab_more"
+        android:showAsAction="always"
+        android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/menu_Search"                
+                android:showAsAction="always|withText"
+                android:title="@string/find_product">
+            </item>
+            <item
+                android:id="@+id/menu_Catalogue"                
+                android:showAsAction="always|withText"
+                android:title="@string/offers">
+            </item>
+            <item
+                android:id="@+id/menu_More"                
+                android:showAsAction="always|withText"
+                android:title="@string/user">
+            </item>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#A1acacac"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lvUserStatus"
+        android:layout_width="200dp"
+    	android:layout_height="220dp"
+        android:background="#FFFFFF"
+        android:choiceMode="none"
+        android:divider="@color/list_diverder"
+        android:dividerHeight="1dp"
+        android:layout_centerInParent="true"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="vertical"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

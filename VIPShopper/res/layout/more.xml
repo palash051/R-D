@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/moreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_item_bg"
+        android:orientation="vertical" >
+
+        <ViewFlipper
+            android:id="@+id/vfMore"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/list_item_bg" >
+
+            <include
+                android:id="@+id/moreUserAccount"
+                layout="@layout/online_payment_user_login" />
+
+            <include
+                android:id="@+id/lMoreOnlinePaymentUserInfo"
+                layout="@layout/online_payment_user_info" />
+
+            <ProgressBar
+                android:id="@+id/pbMoreProgressBar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center" />
+        </ViewFlipper>
+    </RelativeLayout>
+
+</LinearLayout>

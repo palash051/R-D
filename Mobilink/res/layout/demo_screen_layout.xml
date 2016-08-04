@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background" >
+
+    <ImageView
+        android:id="@+id/ivDemoMain"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+       	android:layout_marginTop="40dp"
+        android:src="@drawable/mynet_main_iamage" />
+
+    <ImageView
+        android:id="@+id/ivDemoLogo"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivDemoMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mynet_title_iamage" />
+    
+    <ImageView
+        android:id="@+id/ivDemoTitle"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ivDemoLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/demo_screen_demo" />
+    
+    <ImageView
+        android:id="@+id/ivDemoMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/ivDemoTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/demo_screen_message" />
+    
+    <ImageView
+        android:id="@+id/ivDemoSupport"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/demo_screen_support_email" />
+    
+
+</RelativeLayout>

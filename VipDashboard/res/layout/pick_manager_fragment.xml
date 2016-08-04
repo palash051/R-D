@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+    
+        <TextView
+                android:id="@+id/tvOffers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We are working hard to release our own anti-virus definitions. Until then we recommend any of the following apps."
+                android:textColor="@color/bluetextcolor"
+                android:textSize="15sp"
+                android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/llLiveFeedListView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:background="#D9D9D9"
+        android:orientation="vertical"
+       	android:padding="5dp"  >
+
+        <ListView
+            android:id="@+id/lvAppListpick"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:choiceMode="multipleChoice"
+            android:divider="#D9D9D9"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scrollbars="vertical"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+</LinearLayout>

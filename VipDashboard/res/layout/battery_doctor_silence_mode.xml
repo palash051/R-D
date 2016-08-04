@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#303945" >
+    <TextView
+        android:id="@+id/tvSilenceModeHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/battery_doctor_header"
+        android:gravity="center"
+        android:text="Unchanged"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/HeaderShow"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/battery_doctor_divider" />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView 
+            android:id="@+id/tvsilence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silence"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView 
+            android:id="@+id/tvSilenceMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+        <TextView 
+            android:id="@+id/tvvibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibration"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView 
+            android:id="@+id/tvVibrationMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp" >
+        <RelativeLayout 
+            android:id="@+id/rlCancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="#808080"
+            android:layout_marginRight="10dp">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/rlOk"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="#2182F9"
+            android:layout_marginLeft="10dp">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="OK"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

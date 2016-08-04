@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <com.shopper.app.custom.controls.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_conditions"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" >
+            </View>
+
+            <com.shopper.app.custom.controls.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accept_terms"
+                android:textColor="#3f6618" />
+        </LinearLayout>
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/dismiss"
+            android:layout_width="64dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/ok"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

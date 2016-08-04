@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/application_background"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+      
+        android:gravity="center"
+        android:text="Battery Info"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <RelativeLayout
+                android:id="@+id/rlBatteryDoctorHealthStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+              >
+
+                <ImageView
+                    android:id="@+id/ivHealthStatus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/healthstatus" />
+
+                <TextView
+                    android:id="@+id/tvHealthStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ivHealthStatus"
+                    android:text="Health Status"
+               
+                    android:textColor="#000000"
+         			android:textStyle="normal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvHealthStatusResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:layout_marginRight="5dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+               
+            </RelativeLayout>
+            <View
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@drawable/battery_doctor_custom_divider" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+    <RelativeLayout
+                android:id="@+id/rlBatteryDoctorMaximumPower"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+               
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+              >
+
+                <ImageView
+                    android:id="@+id/ivBatteryDoctorMaximumPower"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/maximumpower" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorMaximumPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ivBatteryDoctorMaximumPower"
+                    android:text="Maximum Power"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorMaximumPowerResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:layout_marginRight="5dp"
+  					android:textColor="#000000"
+                    android:textSize="12sp" />
+               
+            </RelativeLayout>
+                        <View
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@drawable/battery_doctor_custom_divider" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+ <RelativeLayout
+                android:id="@+id/rlBatteryDoctorcurrentPower"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+              >
+
+                <ImageView
+                    android:id="@+id/ivBatteryDoctorcurrentPower"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/currentpower" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorcurrentPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ivBatteryDoctorcurrentPower"
+                    android:text="Current Power"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorcurrentPowerResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12sp" 
+                   
+                android:layout_marginRight="5dp"
+                />
+               
+            </RelativeLayout>
+                        <View
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@drawable/battery_doctor_custom_divider" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+     <RelativeLayout
+                android:id="@+id/rlBatteryDoctorTemperature"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+              
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+              >
+
+                <ImageView
+                    android:id="@+id/ivBatteryDoctorTemperature"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/batteryteamparture" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ivBatteryDoctorTemperature"
+                    android:text="Temperature"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorTemperatureResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:layout_marginRight="5dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+               
+            </RelativeLayout>
+                        <View
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@drawable/battery_doctor_custom_divider" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+  <RelativeLayout
+                android:id="@+id/rlBatteryDoctorVoltage"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+              >
+
+                <ImageView
+                    android:id="@+id/ivBatteryDoctorVoltage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/batteryvoltage" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorVoltage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ivBatteryDoctorVoltage"
+                    android:text="Battery Voltage"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorVoltageResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:layout_marginRight="5dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+               
+            </RelativeLayout>
+                        <View
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@drawable/battery_doctor_custom_divider" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+      <RelativeLayout
+                android:id="@+id/rlBatteryDoctorType"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+          
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+              >
+
+                <ImageView
+                    android:id="@+id/ivBatteryDoctorType"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/batterytype" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ivBatteryDoctorType"
+                    android:text="Battery Type"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDoctorTyperesults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:layout_marginRight="5dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+               
+            </RelativeLayout>
+                        <View
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@drawable/battery_doctor_custom_divider" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+    <TextView
+                    android:id="@+id/tvHealthStatusResultsTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+</LinearLayout>

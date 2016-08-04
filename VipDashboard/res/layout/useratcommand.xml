@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" > 
+    
+
+     <TextView
+            android:id="@+id/tvHistroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:text="History"
+            android:textColor="#5ADF9F"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+     
+    
+       
+         <EditText
+            android:id="@+id/edit_cmdstr"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="#5ADF9F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:inputType="text"/>
+         
+            <TextView
+            android:id="@+id/tvStartProcess"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:text="Start Process"
+            android:textColor="#5ADF9F"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+       
+       
+      
+    
+</LinearLayout>

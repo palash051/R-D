@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/rlCollaborationMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvCollaborationMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Broadcast"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+         <SearchView
+            android:id="@+id/svNotificationUserGroupList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:queryHint="Search" >
+        </SearchView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlCollaborationMainTitle"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvNotificationUserGroupList"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/list_diverder"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:scrollbars="vertical"
+            android:scrollingCache="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bar"
+            android:orientation="horizontal" >          
+
+            <RelativeLayout
+                android:id="@+id/rlAddNotification"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    android:id="@+id/bAddNotification"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/add_notifications" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bAddNotification"
+                    android:layout_centerHorizontal="true"
+                    android:text="New"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbNotificationUserGroupList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

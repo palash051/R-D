@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+ 
+
+    <TextView
+        android:id="@+id/tvSignalStrenghtHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/llmyexperience"
+        android:background="@color/tabHeaderText"
+        android:gravity="center"
+        android:text="Network Usage History"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <CalendarView
+        android:id="@+id/cvNetworkUsageHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvSignalStrenghtHeader"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#28ADE3"
+        android:focusedMonthDateColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/cvNetworkUsageHistory"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/svNetworkUsageHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rlheaderDay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvDateTimeViewHeader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/drop_down_back"
+                    android:text="2014-01-11 day average"
+                    android:textColor="@color/header_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryVoiceCall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDateTimeViewHeader"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/drop_down_back"
+                    android:text="Voice Call"
+                    android:textColor="@color/header_text"
+                    android:textSize="15sp" />
+                <!-- Call Received -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallReceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryVoiceCall"
+                    android:layout_marginLeft="15dp"
+                    android:text="Calls received :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallReceivedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryVoiceCall"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Call Made -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallMade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryCallReceived"
+                    android:layout_marginLeft="15dp"
+                    android:text="Calls Made :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallMadeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryCallReceived"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Call Dropped -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallDropped"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryCallMade"
+                    android:layout_marginLeft="15dp"
+                    android:text="Calls Dropped :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallDroppedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryCallMade"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Call Setup Failure -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallSetupFailur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryCallDropped"
+                    android:layout_marginLeft="15dp"
+                    android:text="Calls Setup Failure :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryCallSetupFailurValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryCallDropped"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- SMS -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistorySMSHeader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryCallSetupFailur"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/drop_down_back"
+                    android:text="SMS"
+                    android:textColor="@color/header_text"
+                    android:textSize="15sp" />
+                <!-- SMS Sent -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistorySMSSent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistorySMSHeader"
+                    android:layout_marginLeft="15dp"
+                    android:text="SMS sent :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistorySMSSentValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistorySMSHeader"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- SMS Received -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistorySMSReceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistorySMSSent"
+                    android:layout_marginLeft="15dp"
+                    android:text="SMS received :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistorySMSReceivedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistorySMSSent"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- MObile Usages -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMobileUsagesHeader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistorySMSReceived"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/drop_down_back"
+                    android:text="Mobile Usages :"
+                    android:textColor="@color/header_text"
+                    android:textSize="15sp" />
+                <!-- Maximum Strength -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMaxStrength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMobileUsagesHeader"
+                    android:layout_marginLeft="15dp"
+                    android:text="Max strength(dBm) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMaxStrengthValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMobileUsagesHeader"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Minimum Strength -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMinStrength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMaxStrength"
+                    android:layout_marginLeft="15dp"
+                    android:text="Min strength(dBm) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMinStrengthValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMaxStrength"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Average Strength -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryAvgStrength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMinStrength"
+                    android:layout_marginLeft="15dp"
+                    android:text="Average Strength(dBm) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryAvgStrengthValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMinStrength"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+
+                <!-- Maximum Duration -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMaxDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryAvgStrength"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Max duration(s) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMaxDurationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryAvgStrength"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Minimum Strength -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMinDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMaxDuration"
+                    android:layout_marginLeft="15dp"
+                    android:text="Min duration(s) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMinDurationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMaxDuration"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Average Strength -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryAvgDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMinDuration"
+                    android:layout_marginLeft="15dp"
+                    android:text="Average duration(s) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryAvgDurationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMinDuration"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+
+                <!-- Maximum Latency -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMaxLatency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryAvgDuration"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Max Latency(s) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMaxLatencyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryAvgDuration"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Minimum Latency -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMinLatency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMaxLatency"
+                    android:layout_marginLeft="15dp"
+                    android:text="Min Latency(s) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryMinLatencyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMaxLatency"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Average Strength -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryAvgLatency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMinLatency"
+                    android:layout_marginLeft="15dp"
+                    android:text="Average latency(s) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryAvgLatencyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryMinLatency"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+
+                <!-- WIFI -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryWIFIHeader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryAvgLatency"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/drop_down_back"
+                    android:text="WIFI :"
+                    android:textColor="@color/header_text"
+                    android:textSize="15sp" />
+                <!-- WIFI Date -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryWIfiData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryWIFIHeader"
+                    android:layout_marginLeft="15dp"
+                    android:text="WIFI data(MB) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryWIfiDataValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryWIFIHeader"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+                <!-- Download Average -->
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryDownloadAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNetworkUsageHistoryWIfiData"
+                    android:layout_marginLeft="15dp"
+                    android:text="Download avg speed(kbps) :"
+                    android:textColor="@color/home_item_bg" />
+
+                <TextView
+                    android:id="@+id/tvNetworkUsageHistoryDownloadAverageValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvNetworkUsageHistoryWIfiData"
+                    android:layout_marginRight="45dp"
+                    android:text="0"
+                    android:textColor="@color/home_item_bg" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+        <ImageView
+        android:id="@+id/ivHomepageFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/dashboard_footer"
+        android:visibility="gone" />
+    
+
+    <ProgressBar
+        android:id="@+id/pbDashBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+
+</LinearLayout>

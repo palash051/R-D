@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circular="http://schemas.android.com/apk/res/com.vipdashboard.app.customcontrols"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+       
+        android:gravity="center"
+        android:text="Unique 3 Stage Charging"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <com.vipdashboard.app.customcontrols.CircularProgressBar
+                android:id="@+id/circularprogressbar"
+                style="@style/Widget.ProgressBar.CircularProgressBar"
+                android:layout_width="200dip"
+                android:layout_height="200dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip" />
+            
+            <TextView 
+                android:id="@+id/tvChargingState"
+                android:layout_width="wrap_content"
+                android:layout_height="70sp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Unplug now, charging complete"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+            
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/battery_doctor_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rlSave"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#2182F9"
+                
+                 >
+
+                <LinearLayout
+                    android:id="@+id/llImageSelectorSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivSaveSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_save"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivSaveUnSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_save_active" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSave"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llImageSelectorSave"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCharge"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1" 
+                android:background="#FF9900" >
+
+                <LinearLayout
+                    android:id="@+id/llImageSelectorCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivChargeSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_charge" />
+
+                    <ImageView
+                        android:id="@+id/ivChargeUnSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_charge_select"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCharge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llImageSelectorCharge"
+                    android:gravity="center"
+                    android:text="Charge"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMode"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#00B050"  >
+
+                <LinearLayout
+                    android:id="@+id/llImageSelectorMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivModeSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_mode" />
+
+                    <ImageView
+                        android:id="@+id/ivModeUnSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_mode_select"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llImageSelectorMode"
+                    android:gravity="center"
+                    android:text="Mode"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlRank"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#CC3300" >
+
+                <LinearLayout
+                    android:id="@+id/llImageSelectorRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivRankSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_rank" />
+
+                    <ImageView
+                        android:id="@+id/ivRankUnSelected"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/battery_doctor_rank_select"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvRank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llImageSelectorRank"
+                    android:gravity="center"
+                    android:text="Rank"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

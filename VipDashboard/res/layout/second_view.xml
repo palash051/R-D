@@ -1,0 +1,14 @@
+<RelativeLayout android:id="@+id/Layout02"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView
+android:layout_centerHorizontal="true"
+android:layout_centerVertical="true"
+android:layout_width="92dp"
+android:id="@+id/ImageView02"
+android:layout_height="92dp"
+android:src="@drawable/optimization_done"
+>
+</ImageView>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    <TextView 
+        android:id="@+id/tvTermsAndConditonHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+    
+    <TextView 
+        android:id="@+id/tvTermsAndConditionsubHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for using MYNET!"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:gravity="left"
+        android:layout_marginTop="10dp" 
+        android:textSize="12sp"/>
+    
+    <TextView 
+        android:id="@+id/tvTermsAndConditionBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MYNET’s products and services are provided by Conio Innovations Limited. These Terms of Service (Terms) govern your access to and use of MYNET website, products, and services (Products). Please read these Terms carefully, and contact us if you have any questions. By accessing or using our Products, you agree to be bound by these Terms and by our Privacy Policy."
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_marginTop="10dp" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Read more..."
+        android:textColor="@color/sub_header_text"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+    <Button
+            android:id="@+id/bTermsAndCondition"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/sub_header_text"
+            android:text="Close"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+</LinearLayout>

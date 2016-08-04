@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+    
+       <LinearLayout
+        android:id="@+id/llAnimation"
+         android:layout_height="fill_parent"
+         android:layout_width="fill_parent"
+        android:orientation="vertical" >
+       
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="Etisalat"
+            android:textColor="#FFF5FF"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvCompanyCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvCompanyName"
+            android:gravity="right"
+            android:text="United Arab Emirates"
+            android:textColor="#FFF5FF"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    
+    
+      <LinearLayout
+        android:id="@+id/HomePagePreFirstRow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+            <RelativeLayout
+            android:id="@+id/rlPHomePageLounge"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"            
+            android:background="#2182F9" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomePageLounge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivHomePageLounge"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/memory_boost" />
+
+                <TextView
+                    android:id="@+id/tvHomeAppbaseTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomePageLounge"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="BOOST"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+            <RelativeLayout
+            android:id="@+id/rlUtilities"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#000099" >
+
+            <RelativeLayout
+                android:id="@+id/rlPUtilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivUtilities"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/utilities" />
+
+                <TextView
+                    android:id="@+id/tvUtilities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivUtilities"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="CALL PLAY"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+          </LinearLayout>
+    
+    
+
+    <LinearLayout
+        android:id="@+id/HomePageFirstRow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlPHomePageMyDashBoard"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#FF33CC" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomePageMyDashBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivHomePageMyDashBoard"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/dashboard_new" />
+
+                <TextView
+                    android:id="@+id/tvHomePageMyDashBoard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomePageMyDashBoard"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="NETWORK DASHBOARD"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMyDevice"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#FF9900" >
+
+            <RelativeLayout
+                android:id="@+id/rlNetworkLatest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/tvMyDevice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivNetworkLatest"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="MY DEVICE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivNetworkLatest"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/mydevice_new" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPHomePageReportProblem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/home_item_bg"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomePageReportProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivHomePageReportProblem"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/vipd_report_problem" />
+
+                <TextView
+                    android:id="@+id/tvHomePageReportProblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomePageReportProblem"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="REPORT PROBLEM"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HomePageSecondRow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlCompanyName"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#00B050" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivHomepageTechnicalReports"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/companyname_new" />
+
+                <TextView
+                    android:id="@+id/tvOperatorName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomepageTechnicalReports"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="DU CARE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPHomepageReportProblem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#CC3300" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomepageUsagesHistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/tvPHomepageReportProblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomepageUsagesHistry"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="REPORT PROBLEM"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivHomepageUsagesHistry"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/reportproblem_new" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPHomapageMore"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/home_item_bg"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomapageMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivHomapageMore"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/vipd_more" />
+
+                <TextView
+                    android:id="@+id/ivHomapageMoreTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomapageMore"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="MORE"
+                    android:textColor="@color/bottom_hometext_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+        
+        <ImageView
+            
+            android:id="@+id/facebook_button"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/facebook"
+            android:visibility="gone" />
+        
+        </RelativeLayout>
+ </LinearLayout>
+ 
+       
+       
+   
+         <ImageView
+        android:id="@+id/ivHomepageFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/vipd_homepage_footer"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pbHome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminateDrawable="@drawable/custom_progrress_bar"
+        android:visibility="gone" />
+</LinearLayout>

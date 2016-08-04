@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+	<TextView 
+        android:id="@+id/tvAssistanceNetworkDoctorHeaderText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Self Service"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#858585" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/tvAssistanceNetworkDoctorHeaderText"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/bSelfServiceButton1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Self Service Home"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/bSelfServiceButton2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bSelfServiceButton1"
+            android:text="Self Service Account Info"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/bSelfServiceButton3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bSelfServiceButton2"
+            android:text="Self Service Details"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</RelativeLayout>

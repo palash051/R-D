@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_item_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/home_item_bg"
+        android:minHeight="40dp" >
+        
+        <ImageView 
+            android:id="@+id/imgAppBased"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tvLavelList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Lavel List"
+            android:textColor="@color/list_Item_text"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!-- <ImageView
+        android:id="@+id/ivAppBaseGridItem"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="matrix"
+        android:background="@drawable/mail_button" />
+
+    <TextView
+        android:id="@+id/tvAppBaseGridItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAppBaseGridItem"
+        android:layout_centerHorizontal="true"
+        android:text="Mail"
+        android:textColor="@color/bottom_hometext_color"
+        android:textSize="15sp"
+        android:textStyle="bold" /> -->
+
+</RelativeLayout>

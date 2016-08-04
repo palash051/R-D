@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rlSelectGraphStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/rgGroupStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/barGraphButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Bar Graph" />
+
+            <RadioButton
+                android:id="@+id/lineGraphButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line Graph" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlSelectGraphStyle" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/barGraphThreeG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/graph1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:scrollbars="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/graph2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/graph17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineGraphThreeG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lgraph1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:scrollbars="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/lgraph17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pbGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

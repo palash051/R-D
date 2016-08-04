@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+    <TextView
+        
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/tabHeaderText"
+        android:gravity="center"
+        android:text="Service Usage"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />   
+
+    <ImageView
+        android:id="@+id/ivNetworkServiceUsage"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/paging_6_3" />
+
+</LinearLayout>

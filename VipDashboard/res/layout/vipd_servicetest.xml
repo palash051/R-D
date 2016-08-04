@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/tabHeaderText"
+        android:gravity="center"
+        android:text="Service Test"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/sub_header_text" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="WIFI Usages"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="WIFI Data (MB):"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvWIFIDataValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0.00"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Link avg. speed :"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvDownloadavgspeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0.00"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Upload avg. speed (Kbps):"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvUploadavgspeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0.00"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/sub_header_text" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="HTTP"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Site"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="Delay"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Speed"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="(ms)"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="(Kbps)"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tvServiceTestFacebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="www.facebook.com"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvFacebookDelayValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvFacebookDownloadSpeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tvServiceTestYoutube"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="www.youtube.com"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvYoutubeDelayValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvYoutubeDownloadSpeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tvServiceTestBing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="www.bing.com"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBingDelayValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBingDownloadSpeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tvServiceTestTwitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="www.twitter.com"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvTwitterDelayValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvTwitterDownloadSpeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tvServiceTestYahoo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="www.yahoo.com"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvYahooDelayValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvYahooDownloadSpeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tvServiceTestWiki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="en.wikipedia.org"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvWikipediaDelayValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvWikipediaDownloadSpeedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/tvTest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Touch to start test"
+                android:textColor="@color/bottom_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llLastOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ivSpeedTestButtonStop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:src="@drawable/arrow_after"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivSpeedTestButtonStart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:src="@drawable/arrow_before" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

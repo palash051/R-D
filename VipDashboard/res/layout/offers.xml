@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlHomePageMyDashBoard"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="#FF33CC" >
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/support"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="HomeWorkspace" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivImage"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                android:text="Offers"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="Etisalat"
+                android:textColor="#FFF5FF"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvCompanyCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvCompanyName"
+                android:gravity="right"
+                android:text="United Arab Emirates"
+                android:textColor="#FFF5FF"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+     <ImageView
+         android:id="@+id/dwvSpeedometer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/demo_page" />
+     
+    <WebView
+        android:id="@+id/dwvSpeedometer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" 
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvPrivacy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="We don’t have service contract with your operator Etisalat.Please browse through the web site for latest offers"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

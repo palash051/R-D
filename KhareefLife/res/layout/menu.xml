@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color_gradient"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlKhareefmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#4091FF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Khareef"
+            android:textColor="@color/khareeftextcolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="105dp"
+            android:gravity="right"
+            android:text="Live!"
+            android:textColor="@color/livetextcolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/textColor"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlKhareefmenu" >
+
+        <LinearLayout
+            android:id="@+id/rlKhareefmenu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btLatestUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="Latest Update"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btWarroom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="War room"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btShowGraph"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="Network Performance"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btSiteDown"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="Site Down"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btNOCRoster"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="NOCRoster"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!--
+                 <Button
+                android:id="@+id/btNetworkUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="40dp"
+                android:text="Network Update"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/bt2GUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="40dp"
+                android:text="2G Update"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bt3GUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="40dp"
+                android:text="3G Update"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btLTEUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="40dp"
+                android:text="LTE Update"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btNetwork"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="Network Performance"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            -->
+
+            <Button
+                android:id="@+id/btDirectory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="Khareef Directory"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btOffers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="Omantel Offers"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btPartnership"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="Operational Manual"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btuserguide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0055C7"
+                android:gravity="left|center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="User Guide"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choose_yourmode"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/battery_doctor_header"
+        android:gravity="center"
+        android:text="Select saving mode"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/HeaderShow"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/battery_doctor_divider" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlYourMode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#353F4C" >
+
+                        <LinearLayout
+                            android:id="@+id/llmodeselector"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/ivModeActive"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/mode_active" />
+
+                            <ImageView
+                                android:id="@+id/ivModeDeactive"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/mode_deactive"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvModeHeadertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/llmodeselector"
+                            android:text="Your Mode"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvModeHeadertext"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/llmodeselector"
+                            android:text="Tab arrow on right to edit"
+                            android:textColor="#646B74"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/right_arrow" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlSuperSaving"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#394350" >
+
+                        <LinearLayout
+                            android:id="@+id/llSuperSavingSelector"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/ivSuperSavingActive"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/mode_active"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/ivSuperSavingDeactive"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/mode_deactive" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvSuperSavingHeadertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/llSuperSavingSelector"
+                            android:text="Super Saving"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvSuperSavingHeadertext"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/llSuperSavingSelector"
+                            android:text="Phone and SMS on"
+                            android:textColor="#646B74"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/right_arrow" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlSilentMode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#353F4C" >
+
+                        <LinearLayout
+                            android:id="@+id/llSilentModeSelector"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/ivSilentModeActive"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/mode_active"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/ivSilentModeDeactive"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/mode_deactive" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvSilentModeHeadertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/llSilentModeSelector"
+                            android:text="Silent Mode"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvSilentModeHeadertext"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/llSilentModeSelector"
+                            android:text="Enable silence and vibration"
+                            android:textColor="#646B74"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/right_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+   
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/battery_doctor_header"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlCancle"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#808080" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

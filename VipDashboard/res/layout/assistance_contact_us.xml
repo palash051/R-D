@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    <TextView 
+        android:id="@+id/tvAssistanceNetworkDoctorHeaderText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#858585" />
+    <EditText 
+        android:id="@+id/etSubjectTextBox"
+        android:layout_below="@+id/tvAssistanceNetworkDoctorHeaderText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="[Subject]"
+        android:gravity="top|left"
+       android:textColor="#000000" 
+       android:textSize="12sp"
+        android:background="@drawable/signup_edittext_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <EditText 
+        android:id="@+id/etMessageBox"
+        android:layout_below="@+id/etSubjectTextBox"
+        android:singleLine="false"
+        android:lines="5"
+        android:gravity="top|left"
+        android:textColor="#000000" 
+       android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/signup_edittext_border"
+        android:hint="[What you want to ask?]" />
+    <CheckBox 
+        android:id="@+id/checkbox"
+        android:layout_below="@+id/etMessageBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Include automatically generated information"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000" />
+    <LinearLayout
+        android:id="@+id/llCallDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/checkbox" >
+
+            <TextView
+                style="@style/labelStyleLeft"
+                android:text="@string/tvCellLocation"
+                android:textColor="@color/sub_header_text" 
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cellLocation_info"
+                style="@style/textStyle"
+                android:textColor="@color/sub_header_text" 
+                android:textSize="12sp"/>
+     </LinearLayout>
+     <TextView 
+         android:id="@+id/tvSendEmail"
+         android:layout_below="@+id/llCallDetails"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+         android:text="Send a mail"
+         android:textSize="12sp" />
+     <TextView 
+         android:id="@+id/tvContactTOHotLine"
+         android:layout_below="@+id/tvSendEmail"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+         android:text="Call Customer Care hotline"
+         android:textSize="12sp" />
+     <ImageView 
+         android:id="@+id/imageViewDot_one"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/contact_us_dot_thired"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"/>
+</RelativeLayout>

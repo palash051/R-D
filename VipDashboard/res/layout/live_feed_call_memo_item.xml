@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp">
+        <ImageView 
+            android:id="@+id/ivLiveFeedImage"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user_icon" />
+        <TextView 
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ivLiveFeedImage"
+            android:layout_marginLeft="5dp" />
+        <TextView 
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivLiveFeedImage"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+        <TextView 
+            android:id="@+id/tvCallMemoText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ivLiveFeedImage"
+            android:layout_toLeftOf="@+id/ivVoiceMemo"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+        <TextView 
+            android:id="@+id/tvCallMemoLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ivLiveFeedImage"
+            android:layout_below="@+id/tvCallMemoText"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+        <ImageView 
+            android:id="@+id/ivVoiceMemo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mynet_voice"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

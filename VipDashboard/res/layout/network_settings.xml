@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/application_background"
+        android:orientation="vertical" >
+
+        <TextView
+           
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/tabHeaderText"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVersionInformation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Version Information"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlversioninformation"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/application_details_background"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llversioninformation1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Name"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvGeoptima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MyNet"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llversioninformation2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llversioninformation1"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/tvVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Version"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvversioninfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.0"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvCollectionMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Collection Mode"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlCollectionMode"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/application_details_background"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llCollectionMode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="8dp"
+                    android:text="Low consumption mode"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Change"
+                        android:textColor="@color/sub_header_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvSendMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Send Mode"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlSendMode"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/application_details_background"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/chksend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Send events and run data test only over WIFI"
+                android:textColor="@color/sub_header_text" />
+
+            <CheckBox
+                android:id="@+id/chkcollect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chksend"
+                android:text="Collect and send events while roaming"
+                android:textColor="@color/sub_header_text" />
+
+            <CheckBox
+                android:id="@+id/chkmonitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chkcollect"
+                android:text="Monitor events"
+                android:textColor="@color/sub_header_text" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvmap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Map"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlmap"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/application_details_background"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnclearmap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Clear map"
+                android:textColor="@color/sub_header_text" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvactivetesta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Active tests"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlactivetest"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/application_details_background"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/chksend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Automatic"
+                android:textColor="@color/sub_header_text" />
+
+            <LinearLayout
+                android:id="@+id/llinterval"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chksend"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvinterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="12dp"
+                    android:text="Interval: 1 hour"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnintervalchange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Change"
+                        android:textColor="@color/sub_header_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvphonenumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Phone number"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rlphonenumber"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/application_details_background" >
+
+            <EditText
+                android:id="@+id/edphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:hint="Insert..."
+                android:inputType="number"
+                android:textColor="#000000" 
+                android:textSize="12sp" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvUsageHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Usage history time span"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlUsageHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/application_details_background"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llUsageHistory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/tvinterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="8dp"
+                    android:text="Interva: 30 days"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnusagehistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Change"
+                        android:textColor="@color/sub_header_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvmobiletraffic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Mobile traffic limit (MB)"
+            android:textColor="@color/header_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rlmobiletraffic"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/application_details_background" >
+
+            <EditText
+                android:id="@+id/edmobiletraffic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="2048"
+                android:textColor="@color/sub_header_text"              
+                android:textSize="12sp">
+            </EditText>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/paging_6_5" />
+    </LinearLayout>
+
+</ScrollView>

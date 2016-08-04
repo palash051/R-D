@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.mynet.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llmyexperience"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rlLiveFeedHeader"
+        android:background="@color/value_text"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvVIPDMaps"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Map"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVIPNetwork"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Network"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVIPServices"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_background_selected"
+            android:gravity="center"
+            android:text="Services"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvApplication"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="App"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUsage"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Mobile"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvSpeedTest"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Test"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDeshboardReportTitle"
+        android:layout_width="fill_parent"
+android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+        android:layout_below="@+id/llmyexperience">
+        
+        <TextView
+        android:id="@+id/txtExperienceView"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/tabHeaderText"
+        android:gravity="center"
+        android:text="Application Service Usage"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+       <!--  <TextView
+            android:id="@+id/tvDeshboardReportTitle"
+<<<<<<< .mine            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+=======            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/llmyexperience"
+            android:background="@color/tabHeaderText"
+            android:gravity="center"
+>>>>>>> .theirs            android:text="Service Usage"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" /> -->
+        
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llDeshBoardLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlDeshboardReportTitle"
+        android:orientation="vertical" >
+        
+        <!-- <TextView
+        android:id="@+id/txtExperienceView"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/tabHeaderText"
+        android:gravity="center"
+        android:layout_below="@+id/llmyexperience"
+        android:text="Application Service Usage"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" /> -->
+        
+        
+        
+        
+
+        <!-- <TextView
+            android:id="@+id/txtExperienceView"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="@color/sub_header_text"
+            android:gravity="center"
+            android:text="Application Service Usage"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" /> -->
+
+        <TextView
+            android:id="@+id/tvInstallationDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="Application Service Usages Since "
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250sp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/ivNetworkServiceUsage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="0sp" 
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bar"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <!--
+                 <Button
+                android:id="@+id/bManagement"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dashboard_report_management"
+                android:textSize="16sp" />
+
+            -->
+
+            <RelativeLayout
+                android:id="@+id/rlDashboardReportManagement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/bMyExperience"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dashboard_report_management" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bMyExperience"
+                    android:layout_centerHorizontal="true"
+                    android:text="Management"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+
+    <ProgressBar
+        android:id="@+id/pbDashBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+    
+    
+    <ImageView
+        android:id="@+id/ivHomepageFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:contentDescription="HomeService"
+        android:src="@drawable/dashboard_footer" 
+        android:visibility="gone"/>
+    
+
+</RelativeLayout>

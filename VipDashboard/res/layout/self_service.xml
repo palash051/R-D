@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    
+
+    <RelativeLayout
+        android:id="@+id/Optus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iOptus1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/optus" />
+
+        <TextView
+            android:id="@+id/tMobileNo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iOptus1"
+            android:text="0435 861 862 Optus Prepaid Social v3.00"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/Balance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iBalance1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/balance_2" />
+
+        <TextView
+            android:id="@+id/tBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iBalance1"
+            android:text="Balance"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/Recharge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iRecharge1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/recharge" />
+
+        <TextView
+            android:id="@+id/tRecharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iRecharge1"
+            android:text="Recharge"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/AddOn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iAddon1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/add_ons" />
+
+        <TextView
+            android:id="@+id/tRecharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iAddon1"
+            android:text="Add-On"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:id="@+id/RechargeOtherMobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iRechargeOtherMobile1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/recharge_others" />
+
+        <TextView
+            android:id="@+id/tRechargeOtherMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iRechargeOtherMobile1"
+            android:text="Recharge Other Mobile"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+    
+      <RelativeLayout
+        android:id="@+id/CallSetup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iCallup1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/call_setup" />
+
+        <TextView
+            android:id="@+id/tCallSetup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iCallup1"
+            android:text="Recharge Other Mobile"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/Rewords"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iRewords1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/rewards" />
+
+        <TextView
+            android:id="@+id/tRewords1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iRewords1"
+            android:text="Rewords"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/zx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+     	
+     	<LinearLayout     
+   		 android:layout_width="fill_parent"
+   		 android:layout_height="wrap_content"
+    	 android:orientation="horizontal"
+>
+
+		<RelativeLayout
+		    android:id="@+id/rFaq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"  >
+
+        <ImageView
+            android:id="@+id/iFAQs1"
+            
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/faqs"
+            android:scaleType="matrix" />
+		 <TextView
+                android:id="@+id/tFaq"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/iFAQs1"
+                android:gravity="center"
+                android:text="FAQs"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    
+		 
+		 <RelativeLayout
+		    android:id="@+id/iLiveChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"  >
+
+        <ImageView
+            android:id="@+id/iLiveChat1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/live_chat"
+            android:scaleType="matrix" />
+		 <TextView
+                android:id="@+id/tFaq"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/iLiveChat1"
+                android:gravity="center"
+                android:text="Live Chat"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+       
+		 <RelativeLayout
+		    android:id="@+id/iFeedBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"  >
+
+        <ImageView
+            android:id="@+id/iFeedBack1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/feedback"
+            android:scaleType="matrix" />
+		 <TextView
+                android:id="@+id/tFaq"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/iFeedBack1"
+                android:gravity="center"
+                android:text="Feed Back"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+   
+     	    
+</LinearLayout>
+     
+     </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/CallUs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" >
+
+        <ImageView 
+            android:id="@+id/iCallus1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/call_us" />
+
+        <TextView
+            android:id="@+id/tCallUs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iCallus1"
+            android:text="Call Us"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    
+</LinearLayout>

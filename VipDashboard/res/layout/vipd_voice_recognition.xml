@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.mynet.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlDeshboardReportTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/header_bar" >
+        
+        
+        <TextView
+        android:id="@+id/tvDeshboardReportTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="right"
+        android:layout_below="@+id/llmyexperience"
+        android:text="Search View"
+        android:textColor="@color/header_text"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+        
+        <!-- <TextView
+            android:id="@+id/tvDeshboardReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:text="Search View"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llDeshBoardLayout"
+        android:layout_below="@+id/rlDeshboardReportTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtExperienceView"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="@color/sub_header_text"
+            android:gravity="center"
+            android:text="Voice Recognition"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <LinearLayout
+        android:id="@+id/llDeshBoardLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+            
+    <Button android:id="@+id/speakButton"
+        android:layout_width="fill_parent"
+        android:onClick="speakButtonClicked"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Click Me and Speeck" />
+    
+      <TextView
+        android:id="@+id/tvVoicetoText"
+        android:layout_width="fill_parent"
+        android:layout_height="100sp"
+        android:paddingBottom="4dip"
+        android:textColor="#000"
+        android:text="OutPut will come here" />
+      
+      
+      
+    </LinearLayout>
+    
+
+    </LinearLayout>
+     
+    
+    <ImageView
+        android:id="@+id/ivHomepageFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:contentDescription="HomeService"
+        android:src="@drawable/dashboard_footer" />
+</RelativeLayout>

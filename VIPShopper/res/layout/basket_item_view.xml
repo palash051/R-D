@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bBasketRowItem"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_bg"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout
+        android:id="@+id/rlBasketItemImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:layout_weight="0"
+         >
+
+        <ImageView
+            android:id="@+id/tvBasketItemImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="left|center_vertical"
+            android:scaleType="fitXY"
+            android:singleLine="true" 
+            android:contentDescription="@string/todo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBasketItemQty"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:gravity="top"
+       
+        android:layout_weight="0" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvBasketItemQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:gravity="right|top"
+            android:singleLine="true"            
+            android:textColor="@color/royal_blue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llBasketItemDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvBasketItemText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvBasketItemPricePer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_below="@id/tvBasketItemText" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvBasketItemDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            android:layout_below="@id/tvBasketItemPricePer" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBasketItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="top|right"
+        android:visibility="visible"
+        android:layout_weight="1" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvBasketItemTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvBasketItemTotalPriceFraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

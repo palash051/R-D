@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlContactMain"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/collaboration_header" >
+        
+        <TextView
+            android:id="@+id/tvBackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Sync"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/collaboration_new_group"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        
+        
+
+        <TextView
+            android:id="@+id/tvChatMainTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Contact Info"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ivProfilePortion"
+        android:layout_below="@+id/rlContactMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp" >
+
+        <ImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_icon" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="Contact name"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMessageToContact"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ivProfilePortion"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:background="@drawable/chat"
+        android:gravity="center"
+        android:textColor="#2D4B82"
+        android:text="Message"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+     <LinearLayout
+        android:id="@+id/llMobileNo"
+         android:layout_below="@+id/tvMessageToContact"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/chat"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+   
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#2D4B82"
+        android:text="Mobile"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+    
+     <ImageView
+            android:id="@+id/ivFavoriteNormal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+               android:layout_marginRight="10dp"
+            android:src="@drawable/user_favorite_normal" 
+              />
+
+        <ImageView
+            android:id="@+id/ivFavoriteSelected"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/user_favorite_selectedmode"
+            android:visibility="gone"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOnlineStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/llMobileNo"
+        android:layout_gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/chat"
+        android:textColor="#2D4B82"
+        android:gravity="center"
+        android:text="Status"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvOnlineStatus"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:textColor="#2D4B82"
+        android:background="@drawable/chat"
+        android:gravity="center"
+        android:text="Email : N/A"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+    
+    
+
+    <TextView
+        android:id="@+id/tvClearConversion"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvEmail"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:textColor="#2D4B82"
+        android:background="@drawable/chat"
+        android:gravity="center"
+        android:text="Clear Conversion"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

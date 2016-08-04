@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlSignUpHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tool_bar"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSignUPTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rlSignUpHeader"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvCollaborationMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="My Organization"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewMyOrganization"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSignUPTitle" >
+
+        <RelativeLayout
+            android:id="@+id/rlMyOrganizationMainContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvMyOrganizationMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Create an account for your colleague and start working here! An email will be sent to your colleague with username and password along with installation package."
+                android:textColor="#00B0F0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvMyOrganizationMessagebelow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMyOrganizationMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="We found following of  your colleagues in the address book"
+                android:textColor="#00B0F0"
+                android:textSize="12sp" />
+
+            <ListView
+                android:id="@+id/listviewMyOrganization"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMyOrganizationMessagebelow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:choiceMode="multipleChoice" >
+            </ListView>
+
+            <Button
+                android:id="@+id/bCreate"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/listviewMyOrganization"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/sub_header_text"
+                android:text="Create"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/bCreate"
+                android:layout_marginTop="10dp"
+                android:background="#00B0F0" />
+
+            <TextView
+                android:id="@+id/tvMyOrganizationMessageCompanyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Alternatively you can create for your colleagues – one by one. Just enter his/her email address below. Its that easy!"
+                android:textColor="#00B0F0"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/llMyOrganization"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMyOrganizationMessageCompanyEmail"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/etColleaguesEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.54"
+                    android:background="@drawable/signup_edittext_border"
+                    android:gravity="center"
+                    android:hint="Company Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000" 
+                    android:textSize="12sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/bCreate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.36"
+                    android:background="@color/sub_header_text"
+                    android:text="Create"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/llMyOrganization"
+                android:layout_marginTop="10dp"
+                android:background="#00B0F0" />
+
+            <TextView
+                android:id="@+id/tvMyOrganizationMessageAddressBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="You can find your colleagues from any other address book"
+                android:textColor="#00B0F0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etMyOrganizationCompanyEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMyOrganizationMessageAddressBook"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/signup_edittext_border"
+                android:gravity="center"
+                android:hint="Your Company Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000" 
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPassowrd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etMyOrganizationCompanyEmail"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/signup_edittext_border"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#000000" 
+                android:textSize="12sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/bFindcolleagues"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/etPassowrd"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/sub_header_text"
+                android:text="Find colleagues"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMyOrganizationMessageBelow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bFindcolleagues"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Its easy and safe, we never store your password."
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

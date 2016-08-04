@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/searchItemDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/list_item_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rlSearchDetailHeading"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/tool_bar"
+            android:visibility="gone" >
+
+            <com.shopper.app.custom.controls.CustomButton
+                android:id="@+id/bSearchBack"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/back_button"
+                android:text="@string/basket_back_button"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSearchDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/rlSearchDetailHeading" >
+
+            <RelativeLayout
+                android:id="@+id/rlSearchImages"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/ivSearchItemImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSearchItemDiscountImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/discount"
+                    android:gravity="center"
+                    android:textColor="@color/searchitemdiscountimage_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSearchItemDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="2dp" >
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSearchItemText1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSearchItemText2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tvSearchItemText1"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSearchItemText3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tvSearchItemText2"
+                    android:textColor="@color/tvSearchitemtext3_text"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSearchItemPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tvSearchItemText3"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSearchItemPriceFraction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvSearchItemText3"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/vfSearchItemFilpper"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlSearchDetail"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutCenter"
+                android:layout_width="170dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" >
+
+                <com.shopper.app.custom.controls.CustomButton
+                    android:id="@+id/bSearchItemAddBusket"
+                    android:layout_width="155dp"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/search_add_basket_button"
+                    android:text="@string/add_item"
+                    android:textColor="@color/black"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSearchCounter"
+                android:layout_width="170dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/order_quantity_background"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <com.shopper.app.custom.controls.CustomButton
+                    android:id="@+id/bSearchItemSubtract"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/basket_item_subtract_button" />
+
+                <com.shopper.app.custom.controls.CustomEditText
+                    android:id="@+id/etSearchItemQuantity"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/basket_item_total_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/black" >
+                </com.shopper.app.custom.controls.CustomEditText>
+
+                <com.shopper.app.custom.controls.CustomButton
+                    android:id="@+id/bSearchItemAdd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/basket_item_add_button" />
+            </RelativeLayout>
+        </ViewFlipper>
+        <RelativeLayout
+            android:id="@+id/rlSearchDiscount"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="220dp" >
+
+            <com.shopper.app.custom.controls.CustomTextView
+                android:id="@+id/tvSearchDiscountHeaderText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="@string/BasketDiscountItemHeaderText"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <HorizontalScrollView
+                android:id="@+id/hsvDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="30dp"
+                android:fadingEdge="none"
+                android:minHeight="150dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/llDiscountFromSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.shopper.app.custom.controls.CustomTextView
+                android:id="@+id/tvSearchDiscountFooterText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+         
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/itemLoadingProgressBar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/itemAddProgressBar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <ProgressBar
+        android:id="@+id/itemDiscountProgressBar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+       android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="310dp" />
+</RelativeLayout>

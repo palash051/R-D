@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/R&D/Undo%20-%20SinglePanel/app/src/main/res/values-sw720dp-land/colors.xml -->
+    <eat-comment/>
+    <color name="accent">#232323</color>
+    <color name="gray_background">#757575</color>
+    <color name="primary">#DA4436</color>
+    <color name="primary_dark">#B93528</color>
+    <color name="yellow">#FFBB33</color>
+    <!-- From: file:/D:/R&D/Undo%20-%20SinglePanel/app/src/main/res/values-sw720dp-land/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+</resources>

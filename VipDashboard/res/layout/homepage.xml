@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/HomePageTop1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomeLatestUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/home_item_bg" >
+
+                <TextView
+                    android:id="@+id/ivHomeLatestUpdateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeLatestUpdate"
+                    android:layout_centerHorizontal="true"
+                    android:text="Up to Date"
+                    android:textColor="@color/bottom_hometext_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeLatestUpdateTitle"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Know your network status  summary and what is happening around…"
+                    android:textColor="@color/bottom_subhometext_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivHomeLatestUpdate"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeService"
+                    android:src="@drawable/home_upto_date" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomeMyExperince"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/home_item_bg" >
+
+                <ImageView
+                    android:id="@+id/ivHomeMyExperince"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:contentDescription="HomeService"
+                    android:src="@drawable/home_selfcare" />
+
+                <TextView
+                    android:id="@+id/tvHomeMyExperinceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeMyExperince"
+                    android:layout_centerHorizontal="true"
+                    android:text="My Experince"
+                    android:textColor="@color/bottom_hometext_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHomeMyExperinceTitle"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Your own network experience, stay close to family and social networks.Access to self care services…"
+                    android:textColor="@color/bottom_subhometext_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HomePageTop"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomeWorkspace"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/home_item_bg" >
+
+                <ImageView
+                    android:id="@+id/ivHomeWorkspace"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/home_workspace" />
+
+                <TextView
+                    android:id="@+id/ivHomeWorkspaceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeWorkspace"
+                    android:layout_centerHorizontal="true"
+                    android:text="Network Performance"
+                    android:textColor="@color/bottom_hometext_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeWorkspaceTitle"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Enter into your workplace-view and do tasks, meetings, edit documents. See the colleagues online. what’s happening at your workplace…"
+                    android:textColor="@color/bottom_subhometext_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomeAppbase"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/home_item_bg" >
+
+                <ProgressBar
+                    android:id="@+id/pbHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivHomeAppbase"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/home_appbase" />
+
+                <TextView
+                    android:id="@+id/ivHomeAppbaseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeAppbase"
+                    android:layout_centerHorizontal="true"
+                    android:text="Subscriber Performance"
+                    android:textColor="@color/bottom_hometext_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHomeAppbaseTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeAppbaseTitle"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Your most frequent apps:"
+                    android:textColor="@color/bottom_subhometext_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHomeAppbaseTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/bHomeMenuAppDashboard"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/home_menu_app_dashboard"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bHomeMenuAppReport"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/home_menu_app_reports"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bHomeMenuAppSite"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/home_menu_app_siteaudit"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bHomeMenuAppRemote"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/home_menu_app_remote_connect"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HomePageTop2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomeServicebase"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="7dp"
+                android:background="@color/home_item_bg" >
+
+                <ImageView
+                    android:id="@+id/ivHomeServicebase"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:contentDescription="HomeService"
+                    android:src="@drawable/home_servicebase" />
+
+                <TextView
+                    android:id="@+id/ivHomeServicebaseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeServicebase"
+                    android:layout_centerHorizontal="true"
+                    android:text="Mobile Usage"
+                    android:textColor="@color/bottom_hometext_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/homeService"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeServicebaseTitle"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Ask experts to help doing your job. Over 9 are online to whom you can seek support"
+                    android:textColor="@color/bottom_subhometext_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomeKnowledgebase"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="7dp"
+                android:background="@color/home_item_bg" >
+
+                <ImageView
+                    android:id="@+id/ivHomeKnowledgebase"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:contentDescription="HomeService"
+                    android:src="@drawable/home_knowledgebase" />
+
+                <TextView
+                    android:id="@+id/tvHomeKnowledgebaseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomeKnowledgebase"
+                    android:layout_centerHorizontal="true"
+                    android:text="Service Usage"
+                    android:textColor="@color/bottom_hometext_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHomeKnowledgebaseTitle"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="View global practices , processes , expert experiances ,templates, reports ,case study that help to do your job."
+                    android:textColor="@color/bottom_subhometext_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

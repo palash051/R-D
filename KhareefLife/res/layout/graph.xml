@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_color_gradient" >
+
+    <RelativeLayout
+        android:id="@+id/rlGraphHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#4091FF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Khareef"
+            android:textColor="@color/khareeftextcolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:layout_marginLeft="105dp"
+            android:text="Live!"
+            android:textColor="@color/livetextcolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlGraphHeader" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rlTrafficReport"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ednetworktrafic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTrafficReport"
+                android:layout_marginBottom="1dp"
+                android:gravity="left"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ednetworktrafic"
+                android:background="#FFFFFF" />
+
+            <RelativeLayout
+                android:id="@+id/rlCSSRData"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/ednetworktrafic"
+                android:layout_marginTop="10dp" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ednetworkdatavolume"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlCSSRData"
+                android:layout_marginBottom="1dp"
+                android:gravity="left"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ednetworkdatavolume"
+                android:background="#FFFFFF" />
+
+            <RelativeLayout
+                android:id="@+id/rlDROPData"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/ednetworkdatavolume"
+                android:layout_marginTop="10dp" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ednetworkcssrdata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlDROPData"
+                android:layout_marginBottom="1dp"
+                android:gravity="left"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ednetworkcssrdata"
+                android:background="#FFFFFF" />
+
+            <RelativeLayout
+                android:id="@+id/rlDataVolume"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/ednetworkcssrdata"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="3dp" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ednetworkdropdata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlDataVolume"
+                android:gravity="left"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pbGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

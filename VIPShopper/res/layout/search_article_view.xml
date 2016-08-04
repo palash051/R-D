@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlsearcharticleHeading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_item_bg" >
+
+   
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/tvsearcharticleHeadingText"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+       	android:layout_gravity="center_vertical"
+        android:text="@string/article"
+        android:textColor="@color/black"        
+        android:textStyle="bold"
+        android:background="@drawable/tool_bar"
+        style="?android:attr/listSeparatorTextViewStyle" />
+    
+
+    <ListView
+        android:id="@+id/lvarticle"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/list_item_bg"
+        android:divider="@color/list_row_divider"
+        android:dividerHeight="1dp"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:scrollbarFadeDuration="0"
+        android:scrollingCache="false" />
+
+</LinearLayout>

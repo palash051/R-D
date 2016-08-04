@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlReportTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Report"
+            android:textColor="@color/header_text"
+           android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlReportTitle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/sub_header_text"
+            android:gravity="center"
+            android:text="Dashboard"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="115dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlReportVoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <!-- <ImageView
+                    android:id="@+id/bReportVoice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_30"
+                    android:contentDescription="JIJI" /> -->
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/bReportVoice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvReportVoiceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bReportVoice"
+                    android:layout_centerHorizontal="true"
+                    android:text="Voice"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvReportVoiceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvReportVoiceTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="30"
+                    android:textColor="@color/value_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <!-- <ImageView
+                    android:id="@+id/bReportData"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_55"
+                    android:contentDescription="JIJI" /> -->
+                    
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/bReportData"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvReportDataTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bReportData"
+                    android:layout_centerHorizontal="true"
+                    android:text="Data"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvReportDataValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvReportDataTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="55"
+                    android:textColor="@color/value_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportSMS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <!-- <ImageView
+                    android:id="@+id/bReportSMS"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_24"
+                    android:contentDescription="JIJI" /> -->
+                
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/bReportSMS"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvReportSMSTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bReportSMS"
+                    android:layout_centerHorizontal="true"
+                    android:text="SMS"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvReportSMSValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvReportSMSTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="24"
+                    android:textColor="@color/value_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportCorporate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <!-- <ImageView
+                    android:id="@+id/bReportCorporate"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_67"
+                    android:contentDescription="JIJI" /> -->
+                    
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/bReportCorporate"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvReportCorporateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bReportCorporate"
+                    android:layout_centerHorizontal="true"
+                    android:text="Corporate"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvReportCorporateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvReportCorporateTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="67"
+                    android:textColor="@color/value_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/sub_header_text"
+            android:gravity="center"
+            android:text="Management"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlReportManagementOptimization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvManagementOptimization"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="Optimization"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportManagementOperations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvManagementOperations"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="Operations"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportManagementDeployment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvManagementDeployment"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="Deployment"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/sub_header_text"
+            android:gravity="center"
+            android:text="Technical"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOptimization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOptimization"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/header_text"
+                    android:gravity="center"
+                    android:text="Optimization"
+                    android:textColor="@color/home_item_bg"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOperations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOperations"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/value_text"
+                    android:gravity="center"
+                    android:text="Operations"
+                    android:textColor="@color/home_item_bg"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalDeployment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalDeployment"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/value_text"
+                    android:gravity="center"
+                    android:text="Deployment"
+                    android:textColor="@color/home_item_bg"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlReportTechnicalOptimizationValue"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOptimizationCSCore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOptimizationCSCore"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="CS Core"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOptimizationPSCore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOptimizationPSCore"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="PS Core"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOptimizationRAN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOptimizationRAN"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="RAN"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlReportTechnicalOperationsValue"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOperationsVAS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOperationsVAS"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="VAS"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOperationsIN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOperationsIN"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="IN"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportTechnicalOperationsNOC_FOPS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvTechnicalOperationsNOC_FOPS"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_item_bg"
+                    android:gravity="center"
+                    android:text="NOC &amp; FOPS"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlReportTechnicalDeploymentValue"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rlReportTechnicalDeploymentProjectStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvTechnicalDeploymentProjectStatus"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/home_item_bg"
+                        android:gravity="center"
+                        android:text="Project Status"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlReportTechnicalDeploymentCivilWork"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvTechnicalDeploymentCivilWork"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/home_item_bg"
+                        android:gravity="center"
+                        android:text="Civil Work"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlReportTechnicalDeploymentInstallation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvTechnicalDeploymentInstallation"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/home_item_bg"
+                        android:gravity="center"
+                        android:text="Installation"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rlReportTechnicalDeploymentIntegration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvTechnicalDeploymentIntegration"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/home_item_bg"
+                        android:gravity="center"
+                        android:text="Integration"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlReportTechnicalDeploymentTuning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvTechnicalDeploymentTuning"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/home_item_bg"
+                        android:gravity="center"
+                        android:text="Tuning"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlReportTechnicalDeploymentSOA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvTechnicalDeploymentSOA"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/home_item_bg"
+                        android:gravity="center"
+                        android:text="SOA"
+                        android:textColor="@color/sub_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<ProgressBar
+        android:id="@+id/pbTechnicalReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/takePhoto"
+        android:showAsAction="always"
+        android:title="@string/take_photo">        
+    </item>
+	<item
+        android:id="@+id/takePhotofromGalary"
+        android:showAsAction="always"
+        android:title="@string/galary">        
+    </item>
+</menu>

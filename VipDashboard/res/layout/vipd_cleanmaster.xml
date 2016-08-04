@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/seekArcContainerStroages"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content" >
+
+                <com.triggertrap.seekarc.SeekArc
+                    
+                    android:id="@+id/seekArcStroages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvStroagesPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="100%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="45sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvStroagesTotalByTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="6.13 GB/13.22GB"
+                        android:textSize="15sp"
+                      android:textColor="#FFFFFF"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="STORAGE"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/seekArcContainerRAM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" >
+
+                <com.triggertrap.seekarc.SeekArc
+                    android:id="@+id/seekArcRam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvRAMPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="100%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="RAM"
+                        android:textSize="20sp"
+                          android:textColor="#FFFFFF"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        
+    </LinearLayout>
+    <TextView
+            android:id="@+id/tvUsagesHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="#3762AD"
+            android:gravity="center"
+            android:text="" 
+            android:visibility="gone" 
+            />
+
+    <LinearLayout
+        android:id="@+id/HomePagePreFirstRow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+         >
+
+        <RelativeLayout
+            android:id="@+id/rlJunkFiles"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#FF33CC"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomePageLounge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivHomePageLounge"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/junk_file" />
+
+                <TextView
+                    android:id="@+id/tvHomeAppbaseTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomePageLounge"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="JUNK FILES"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMemoryBoost"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="#FF9900" >
+
+            <RelativeLayout
+                android:id="@+id/rlPUtilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivUtilities"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/memory_bost" />
+
+                <TextView
+                    android:id="@+id/tvUtilities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivUtilities"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="MEMORY BOOST"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" 
+          android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+         >
+
+        <RelativeLayout
+            android:id="@+id/rlSecurityAndPrivacy"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+             android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:background="#00B050"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlHomePageMyDashBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivHomePageMyDashBoard"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="HomeWorkspace"
+                    android:src="@drawable/security_privacy" />
+
+                <TextView
+                    android:id="@+id/tvHomePageMyDashBoard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivHomePageMyDashBoard"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="SECURITY"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAppManager"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:background="#000099"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlNetworkLatest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivNetworkLatest"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/app_managerss" />
+
+                <TextView
+                    android:id="@+id/tvMyDevice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivNetworkLatest"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="APP REMOVAL"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

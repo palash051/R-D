@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_userstatushome"
+        android:showAsAction="always"
+        android:icon="@drawable/user_status_online">
+        <menu>
+            <item 
+                android:id="@+id/menu_online"
+                android:showAsAction="always|withText"
+                android:title="@string/user_online"
+                android:icon="@drawable/user_status_online" />
+            <item 
+                android:id="@+id/menu_away"
+                android:showAsAction="always|withText"
+                android:title="@string/user_away"
+                android:icon="@drawable/user_status_away" />
+            <item 
+                android:id="@+id/menu_busy"
+                android:showAsAction="always|withText"
+                android:title="@string/user_busy"
+                android:icon="@drawable/user_status_busy" />
+        </menu>        
+    </item>
+
+</menu>

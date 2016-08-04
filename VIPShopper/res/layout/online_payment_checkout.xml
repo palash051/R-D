@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/llOnlinePayment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ViewFlipper            
+            android:id="@+id/vfOnlinePayment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+
+            <include
+                android:id="@+id/lcheckout_mode"
+                layout="@layout/checkout_mode" />
+
+             <include
+                android:id="@+id/lOnline_payment_user_login"
+                layout="@layout/online_payment_user_login" /> 
+
+            <include
+                android:id="@+id/lOnlinePaymentUserInfo"
+                layout="@layout/online_payment_user_info" />
+
+            <include
+                android:id="@+id/lDeliveryPayment"
+                layout="@layout/delivery_payment" />
+
+            <include
+                android:id="@+id/lOnlinePaymentMode"
+                layout="@layout/online_payment_mode" />
+
+            <include
+                android:id="@+id/lDibsPaymentView"
+                layout="@layout/dibs_payment_view" />
+            
+            <include
+                android:id="@+id/moreOldCheckout"
+                layout="@layout/checkout" />
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pbOnlinePayment"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+</FrameLayout>

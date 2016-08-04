@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlMyNetPostHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tvMyNetPostTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="CONFIRMATION"
+            android:textColor="@color/value_text"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/header_text"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Is phone number below correct?"
+        android:textColor="@color/value_text"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+    <TextView 
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="01937100297"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#858585"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#858585">
+        <RelativeLayout 
+            android:id="@+id/rlEditNumber"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:background="@color/value_text" >
+            <TextView 
+                android:id="@+id/tvEditNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Edit number"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/rlYes"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@color/value_text" >
+            <TextView 
+                android:id="@+id/tvYes"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Yes"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

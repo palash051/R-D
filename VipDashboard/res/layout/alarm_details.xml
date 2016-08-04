@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rlttdetailstitle"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tool_bar"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCollaborationMainTitle"
+        android:layout_below="@+id/rlttdetailstitle"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvCollaborationMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="TT Details"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView 
+            android:id="@+id/tvTTNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvCollaborationMainTitle"
+            android:textColor="#000000"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:text="TT Details"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlCollaborationMainTitle" >
+
+        <RelativeLayout
+            android:id="@+id/rlAlarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rlAlarmDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#FFFFFF" >
+                
+                <TableRow 
+                    android:id="@+id/row1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+	                    android:id="@+id/tvSeverity"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginTop="2dp"
+	                    android:text="Severity"
+	                    android:textColor="@color/sub_header_text"
+	                    android:textSize="12sp"
+	                    android:textStyle="bold" />
+                    <TextView
+	                    android:id="@+id/tvSeverityText"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#DC143C"
+	                    android:layout_marginLeft="48dp"
+	                    android:textSize="12sp"
+	                    android:textStyle="normal" />
+                </TableRow>
+                <TableRow 
+                    android:id="@+id/row2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1" >
+                    <TextView
+	                    android:id="@+id/tvAlarm"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginTop="2dp"
+	                    android:text="ALarm"
+	                    android:textColor="@color/sub_header_text"
+	                    android:textSize="12sp"
+	                    android:textStyle="bold" />
+                    <TextView
+	                    android:id="@+id/tvAlarmText"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#000000"
+	                    android:layout_marginLeft="62dp"
+	                    android:textSize="12sp"
+	                    android:textStyle="normal" />
+                </TableRow>
+                <TableRow 
+                    android:id="@+id/row3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row2" >
+                    <TextView
+	                    android:id="@+id/tvEventTime"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginTop="2dp"
+	                    android:text="Event Time"
+	                    android:textColor="@color/sub_header_text"
+	                    android:textSize="12sp"
+	                    android:textStyle="bold" />
+                    <TextView
+	                    android:id="@+id/tvEventTimeText"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#000000"
+	                    android:layout_marginLeft="20dp"
+	                    android:textSize="12sp"
+	                    android:textStyle="normal" />
+                </TableRow>
+                <TableRow 
+                    android:id="@+id/row4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row3" >
+                    <TextView
+	                    android:id="@+id/tvResponsible"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginTop="2dp"
+	                    android:text="Responsible"
+	                    android:textColor="@color/sub_header_text"
+	                    android:textSize="12sp"
+	                    android:textStyle="bold" />
+                    <TextView
+	                    android:id="@+id/tvResponsibleText"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#000000"
+	                    android:layout_marginLeft="10dp"
+	                   android:textSize="12sp"
+	                    android:textStyle="normal" />
+                </TableRow>
+
+                <!-- <TextView
+                    android:id="@+id/tvstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTTNumberDetails"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Status : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                
+                <TextView
+                    android:id="@+id/tvTicketTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvstatus"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Ticket Title : "
+                    android:textColor="#3E48CC"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvAlarmText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTicketTitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Alarm Text : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvImpact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAlarmText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Impact : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvImpact"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Details : "
+                    android:textColor="#3E48CC"
+                   android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTickerType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDetails"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Ticket Type : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                
+                <TextView
+                    android:id="@+id/tvPriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTickerType"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Priority : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvsiteID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPriority"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Site ID : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                
+                <TextView
+                    android:id="@+id/tvCreateBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvsiteID"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Creator : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEventTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCreateBy"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Event Time: "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvWorkingUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEventTime"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Working User : "
+                    android:textColor="#3E48CC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvStatusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvstatus"
+                    android:layout_alignBottom="@+id/tvstatus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvstatus"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#F57698"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvSiteIdText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvsiteID"
+                    android:layout_alignBottom="@+id/tvsiteID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvsiteID"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvEventTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvEventTime"
+                    android:layout_alignBottom="@+id/tvEventTime"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvEventTime"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvTicketTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvTicketTitle"
+                    android:layout_alignBottom="@+id/tvTicketTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvTicketTitle"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvAlarmTitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvAlarmText"
+                    android:layout_alignBottom="@+id/tvAlarmText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvAlarmText"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvImpactTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvImpact"
+                    android:layout_alignBottom="@+id/tvImpact"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvImpact"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvDetailsTitletext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvDetails"
+                    android:layout_alignBottom="@+id/tvDetails"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvDetails"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                
+                <TextView
+                    android:id="@+id/tvTicketTypeText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvTickerType"
+                    android:layout_alignBottom="@+id/tvTickerType"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvTickerType"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvPriorityText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvPriority"
+                    android:layout_alignBottom="@+id/tvPriority"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvPriority"
+                    android:text="Medium Text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvCreatorText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvCreateBy"
+                    android:layout_alignBottom="@+id/tvCreateBy"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvCreateBy"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvWorkingUserText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvWorkingUser"
+                    android:layout_alignBottom="@+id/tvWorkingUser"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvWorkingUser"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" /> -->
+
+            </RelativeLayout>
+
+          <RelativeLayout
+                android:id="@+id/rlStatusList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlAlarmDetail"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#ECECEC" >
+
+            </RelativeLayout>
+            <TextView
+                    android:id="@+id/tvstatusReport"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/rlStatusList"
+                    android:text="Show all updates"
+                    android:textColor="@color/list_Item_text"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            <RelativeLayout 
+                android:id="@+id/AlarmCall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvstatusReport" >
+
+                <EditText
+                    android:id="@+id/etAlarmTTStatusCommentPost"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@+id/bPostTTStatusComment"
+                    android:cursorVisible="true"
+                     android:textColor="#000000" 
+                     android:textSize="12sp"
+                    android:textCursorDrawable="@null" />
+
+                <Button 
+                    android:id="@+id/bPostTTStatusComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Post"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAlarmGraph"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AlarmCall"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp" >
+
+                 <fragment
+                    android:id="@+id/mapAlarmStatus"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="440dp"
+                    android:layout_gravity="top"
+                    android:paddingBottom="5dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+
+    <ProgressBar
+        android:id="@+id/pbAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

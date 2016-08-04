@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and limitations under the License.
+
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <com.google.zxing.client.android.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/status_light"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="-13dp"
+            android:background="@drawable/light" />
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/status_eye"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/eye" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/status_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/msg_default_status"
+            android:textColor="@color/status_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+<!-- 
+        <TextView
+            android:id="@+id/tvScanningProgressCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/status_eye"
+            android:gravity="bottom"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+             -->
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/productdetails"
+        layout="@layout/product_details"
+        android:layout_gravity="bottom"
+          />
+
+    <include
+        android:id="@+id/capturedbarcodeholder"
+        android:layout_marginBottom="5dp"
+        layout="@layout/capturedimage"
+        android:visibility="gone" />
+
+</merge>

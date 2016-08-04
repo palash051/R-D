@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="app_theme" parent="android:Theme.NoTitleBar" />
+
+    <style name="AppTheme" parent="Theme.Sherlock.Light">
+        
+        
+        <item name="searchViewSearchIcon">@drawable/ic_search_inverse</item>
+        <item name="searchViewCloseIcon">@drawable/navigation_cancel</item>
+		
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.AppTheme</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.AppTheme</item>
+       
+        <item name="actionBarStyle">@style/ActionBar.Solid.AppTheme</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.AppTheme</item>
+        
+        
+		<item name="actionBarDivider">@drawable/abs__list_divider_holo_dark</item>
+		<item name="android:actionBarDivider">@drawable/abs__list_divider_holo_dark</item>
+		
+		 <!-- action bar back icon -->
+		<item name="homeAsUpIndicator">@drawable/actionbar_up_button_background</item>
+		<item name="android:homeAsUpIndicator">@drawable/actionbar_up_button_background</item>
+    	
+		<!-- action bar button text style -->
+		<!-- <item name="actionMenuTextAppearance">@style/ActionBar.ActionMenuTextAppearance.AppTheme</item>
+		<item name="android:actionMenuTextAppearance">@style/ActionBar.ActionMenuTextAppearance.AppTheme</item>
+		 -->
+		<!-- 
+		<item name="actionBarItemBackground">@drawable/normal_rounded_button_bg</item>
+		<item name="android:actionBarItemBackground">@drawable/normal_rounded_button_bg</item>
+		
+		<item name="itemBackground">@drawable/normal_rounded_button_bg</item>
+		<item name="android:itemBackground">@drawable/normal_rounded_button_bg</item>
+		 -->
+		
+		<!-- action bar popup menu background style -->
+		<item name="popupMenuStyle">@style/PopupMenu.AppTheme</item>
+		<item name="android:popupMenuStyle">@style/PopupMenu.AppTheme</item>
+		
+		<!-- action bar popup menu item background style -->
+		<item name="dropDownListViewStyle">@style/DropDownListView.AppTheme</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.AppTheme</item>
+		
+		
+		
+    </style>
+<!-- 
+    <style name="AppTheme.ActionBarStyle" parent="Widget.Sherlock.ActionBar">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:height">50dp</item>
+        <item name="android:icon">@drawable/vikinglogo</item>  
+        
+         <item name="background">@color/black</item>
+         <item name="android:background">@color/white</item>
+         <item name="popupMenuStyle">@style/MyActionWidgetTheme</item>
+        
+        
+    </style>
+ -->
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="main_menu">
+        <item name="android:layout_width">255dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:textColor">@color/menu_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">35dip</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/menu_shadow_color</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="main_menu_btnTop" parent="main_menu">
+        <item name="android:layout_marginTop">5dip</item>
+    </style>
+
+    <style name="main_menu_btnNormal" parent="main_menu">
+        <item name="android:layout_marginTop">12dip</item>
+    </style>
+    
+    <style name="MyActionWidgetTheme" parent="Widget.Sherlock.PopupMenu">
+		<item name="android:background">#dcdcdc</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+	
+    <style name="ActionBar.Solid.AppTheme" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        
+        <!-- action bar background -->
+        <item name="background">@drawable/tool_bar</item>
+        <item name="android:background">@drawable/tool_bar</item>
+        
+        <!-- stacked action bar background -->
+        <item name="backgroundStacked">@drawable/tool_bar</item>
+        <item name="android:backgroundStacked">@drawable/tool_bar</item>
+        
+        <!-- split action bar background -->
+		<item name="backgroundSplit">@drawable/tool_bar</item>
+		<item name="android:backgroundSplit">@drawable/tool_bar</item>
+        
+        <!-- action bar title style -->
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+
+        <!-- action bar progress bar style -->
+        <item name="progressBarStyle">@style/ProgressBar.AppTheme</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.AppTheme</item>
+        
+        <item name="android:height">48dp</item>
+        
+        <item name="android:icon">@drawable/vikinglogo</item>  
+        
+        <item name="android:itemPadding">2dp</item>
+        
+        <item name="android:showDividers">beginning</item>
+        
+       <item name="itemTextAppearance">@style/ActionBar.ActionMenuTextAppearance.AppTheme</item>
+        
+        
+    </style>
+
+    <style name="ActionBar.Transparent.AppTheme" parent="@style/Widget.Sherlock.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_apptheme</item>
+        <item name="progressBarStyle">@style/ProgressBar.AppTheme</item>
+    </style>
+	
+    <style name="PopupMenu.AppTheme" parent="@style/Widget.Sherlock.Light.ListPopupWindow">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_apptheme</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_apptheme</item>
+        	
+    </style>
+	
+    <style name="DropDownListView.AppTheme" parent="@style/Widget.Sherlock.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_apptheme</item>
+        <item name="android:divider">@drawable/abs__list_divider_holo_light</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:textAppearance">@style/DropDown.ActionMenuTextAppearance.AppTheme</item>
+        <!-- view styles -->
+		<item name="android:textViewStyle">@style/TextView.AppTheme</item>
+    </style>
+
+    <style name="ActionBarTabStyle.AppTheme" parent="@style/Widget.Sherlock.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_apptheme</item>
+    </style>
+	
+    <style name="DropDownNav.AppTheme" parent="@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_apptheme</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_apptheme</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_apptheme</item>
+    </style>
+    
+    <style name="ProgressBar.AppTheme" parent="@style/Widget.Sherlock.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_apptheme</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.AppTheme" parent="@style/Widget.Sherlock.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_apptheme</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.AppTheme.Widget" parent="@style/Theme.Sherlock">
+        <item name="popupMenuStyle">@style/PopupMenu.AppTheme</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.AppTheme</item>
+    </style>
+    
+    <!-- action bar button text style -->
+	<style name="ActionBar.ActionMenuTextAppearance.AppTheme" parent="TextAppearance.Sherlock.Widget.ActionBar.Menu">
+		<item name="android:textSize">11sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+	
+	<style name="DropDown.ActionMenuTextAppearance.AppTheme" parent="TextAppearance.Sherlock.Widget.PopupMenu">
+		<item name="android:textSize">11sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+	
+	<!-- view textview -->
+	<style name="TextView.AppTheme" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	
+	
+
+</resources>

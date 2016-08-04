@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/application_background" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+        
+        <ImageView
+            android:id="@+id/ivOperatorIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mobilink"
+            android:visibility="visible"
+            android:layout_marginRight="2dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/application_top_header"
+            android:gravity="center"
+            android:text="ACTIVITIES"
+            android:textColor="@color/application_top_header_title_text"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mobilink" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/tvFull_scope_ms_rfp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/operator_list_item_bg"
+            android:gravity="center"
+            android:text="FULL SCOPE MS RFP"
+            android:textColor="@color/application_top_header_title_text"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+        <TextView
+            android:id="@+id/tvMumtaz_trial"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/operator_list_item_bg"
+            android:gravity="center"
+            android:text="MUMTAZ TRIAL"
+            android:layout_below="@+id/tvFull_scope_ms_rfp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/application_top_header_title_text"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"  />
+        <TextView
+             android:id="@+id/tvKhareef_preparation"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/operator_list_item_bg"
+            android:gravity="center"
+            android:text="KHAREEF PREPARATION"
+            android:layout_below="@+id/tvMumtaz_trial"
+           	android:layout_marginTop="10dp"
+            android:textColor="@color/application_top_header_title_text"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"  />
+        <TextView
+            android:id="@+id/tvWork_order_4_negotiation"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/operator_list_item_bg"
+            android:gravity="center"
+            android:text="WORK ORDER 4 NEGOTIATION"
+            android:layout_below="@+id/tvKhareef_preparation"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/application_top_header_title_text"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"  />
+        <TextView
+            android:id="@+id/tvWork_packages_negotiation"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/operator_list_item_bg"
+            android:gravity="center"
+            android:text="WORK PACKAGES NEGOTIATION"
+            android:layout_below="@+id/tvWork_order_4_negotiation"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/application_top_header_title_text"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>

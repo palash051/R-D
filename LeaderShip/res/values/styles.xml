@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="app_theme" parent="android:Theme.NoTitleBar" />
+
+    <style name="AppTheme" parent="Theme.Sherlock">
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/actionbar_up_button_background</item>
+        <item name="android:actionDropDownStyle">@style/MyDropDownItem</item>
+        <item name="actionDropDownStyle">@style/MyDropDownItem</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.ActionBarStyle" parent="Widget.Sherlock.ActionBar">
+        <item name="android:height">50dp</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="Widget.Sherlock.ActionButton">
+        <item name="android:minWidth">32dip</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:padding">0dip</item>
+    </style>
+
+    <style name="MyDropDownItem" parent="Widget.Sherlock.Spinner.DropDown.ActionBar"></style>
+
+    <style name="main_menu">
+        <item name="android:layout_width">255dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">35dip</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="main_menu_btnTop" parent="main_menu">
+        <item name="android:layout_marginTop">5dip</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_20</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="main_menu_btnNormal" parent="main_menu">
+        <item name="android:layout_marginTop">12dip</item>
+    </style>
+
+    <style name="customtheme" parent="@android:style/Theme.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">#993399</item>
+    </style>
+
+    <style name="SpinnerDropDownItem">
+        <item name="android:textColor">#993399</item>
+    </style>
+
+    <style name="fade_animation"></style>
+
+    <style name="settinglistbackground" parent="AppTheme">
+        <item name="android:listViewStyle">@style/settingpreferencelistview</item>
+        <item name="android:checkboxStyle">@style/settingpreferencelistviewcheckbox</item>
+    </style>
+
+    <style name="settingpreferencelistview" parent="@android:style/Widget.ListView">
+        <item name="android:dividerHeight">1dip</item>
+    </style>
+
+    <style name="settingpreferencelistviewcheckbox" parent="android:Widget.CompoundButton.CheckBox"></style>
+
+    <style name="labelStyleRight">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="labelStyleLeft">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textStyleCenter">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textSmallStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="progressStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:progress">15</item>
+        <item name="android:max">100</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+    </style>
+
+    <style name="progressStyleCall">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">20dip</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:progress">15</item>
+        <item name="android:max">100</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+    </style>   
+    
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+</resources>

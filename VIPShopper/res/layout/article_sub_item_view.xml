@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="105dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:minWidth="105dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlSubItemImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/ivSubItemImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/discount"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltvSubItemText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSubItemImage"
+        android:gravity="center" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvSubItemText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvSubItemText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubItemText1"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textColor="@color/subTextColor"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

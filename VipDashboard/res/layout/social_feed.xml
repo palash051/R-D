@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bPublicPost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Public Post" />
+
+    <RelativeLayout
+        android:id="@+id/feedBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/bPublicPost"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvSocialFeed"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:divider="@color/list_diverder"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:scrollbars="vertical"
+                android:scrollingCache="false" />
+
+            <LinearLayout
+                android:id="@+id/tabView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rlSocialFriends"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvSocialFriends"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/header_text"
+                        android:gravity="center"
+                        android:text="Friends"
+                        android:textColor="@color/home_item_bg"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSocialFamily"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvSocialFamily"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/value_text"
+                        android:gravity="center"
+                        android:text="Family"
+                        android:textColor="@color/home_item_bg"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlInvitePeople"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvInvitePeople"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/value_text"
+                        android:gravity="center"
+                        android:text="People"
+                        android:textColor="@color/home_item_bg"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/social_dot_two" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

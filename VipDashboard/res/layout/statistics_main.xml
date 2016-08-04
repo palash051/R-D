@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llAssistanceTab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/value_text"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvUserExperinceStart"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"            
+            android:gravity="center"
+            android:text="Live!"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+         <TextView
+            android:id="@+id/tvUserExperinceHistory"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/tab_background_selected"
+            android:text="History"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserExperinceExperience"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Experience"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserExperinceAssistance"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Assistance"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/tabHeaderText"
+        android:gravity="center"
+        android:text="Statistics"
+        android:textColor="@color/bottom_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/tabStatistics"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvStatisticsOverview"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/header_text"
+            android:gravity="center"
+            android:text="Overview"
+            android:textColor="@color/home_item_bg"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatisticsChart"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/value_text"
+            android:gravity="center"
+            android:text="Chart"
+            android:textColor="@color/home_item_bg"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvStatisticsSocial"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/value_text"
+            android:gravity="center"
+            android:text="Social"
+            android:textColor="@color/home_item_bg"
+            android:textSize="12sp"
+            android:textStyle="bold" />        
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/vfStatistics"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/rlStatisticsOverview"
+            layout="@layout/statistics_overview" />
+
+        <include
+            android:id="@+id/rlStatisticsChart"
+            layout="@layout/statistics_chart" />
+
+        <include
+            android:id="@+id/rlStatisticsSocial"
+            layout="@layout/statistics_social" />        
+    </ViewFlipper>
+
+</LinearLayout>

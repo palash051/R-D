@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlSignUPTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvCollaborationMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Edit My Profile"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svUserSignUp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSignUPTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/llSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvNameID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNameText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="text"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:textCursorDrawable="@null"
+                android:windowSoftInputMode="adjustResize" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Phone"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPhoneText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:inputType="phone"
+               android:textColor="#000000"  
+               android:textSize="12sp" 
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <!--
+                 <EditText
+                android:id="@+id/"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:inputType="textPassword" />
+            -->
+
+
+            <!--
+                 <EditText
+                android:id="@+id/etConfirmPassowrd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:background="@drawable/signup_button_boder"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:inputType="textPassword" />
+            -->
+
+
+            <!--
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:inputType="text" 
+                android:textColor="#000000"  
+                android:textSize="12sp" />
+            -->
+
+            <TextView
+                android:id="@+id/tvDateofBirth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Date of Birth"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/etDateofBirthText"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signup_edittext_border"
+                    
+                    android:inputType="date"
+                    android:textColor="#000000"  
+                    android:textSize="12sp" 
+                   
+                   
+                   android:clickable="false" 
+                   android:cursorVisible="false" 
+                   android:focusable="false" 
+                   android:focusableInTouchMode="false"
+                    
+                     
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:id="@+id/ivCalender"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/datepicker" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvWorkingFor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Working For"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etWorkingForText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:inputType="text"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:editable="false"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/tvPosition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Position"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPositionText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:inputType="text"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:textCursorDrawable="@null" />
+
+            <!--
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" 
+                android:textColor="#000000"  
+                android:textSize="12sp" />
+            -->
+
+            <TextView
+                android:id="@+id/tvManagerEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Manager Email"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etManagerEmailText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:textCursorDrawable="@null" />
+
+            <!--
+            <TextView
+                android:id="@+id/tvDepartment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDepartment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:inputType="text"
+            	android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 _" />
+            
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Manager Email"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etmEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_edittext_border"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000"  
+                android:textSize="12sp" 
+                android:inputType="textEmailAddress" />
+            -->
+
+            <Button
+                android:id="@+id/bSave"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_button_boder"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pbSignUpEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

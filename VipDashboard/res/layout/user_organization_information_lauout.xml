@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp" >
+
+        <TextView
+            android:id="@+id/companytype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Company Type "
+            android:textColor="#00B0F0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/compantTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Company Type"
+            android:textColor="#00B0F0"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/row1"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Unit"
+            android:textColor="#00B0F0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DateofBirthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:text="Date of Birth"
+            android:textColor="#00B0F0"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/row2"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/jobtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Job Type"
+            android:textColor="#00B0F0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/JobTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="5dp"
+            android:text="Job Type"
+            android:textColor="#00B0F0"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/row4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/row3"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/joblocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Job Location"
+            android:textColor="#00B0F0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/JobLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Job Locaiton"
+            android:textColor="#00B0F0"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/row5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/row4"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/memberof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Member Of"
+            android:textColor="#00B0F0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MemberOfText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="5dp"
+            android:text="Member Of"
+            android:textColor="#00B0F0"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </TableRow>
+    <TextView
+            android:id="@+id/addmember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:text="Add More Membership"
+            android:layout_below="@+id/row5"
+            android:textAlignment="center"
+            android:textColor="#00B0F0"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    <TextView 
+        android:id="@+id/tvBasicInformaitonEditButton" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addmember"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#00B0F0"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:text="Edit" />
+</RelativeLayout>

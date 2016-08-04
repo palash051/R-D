@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/tvSettingHeadingText"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/tool_bar"
+        android:text="@string/settings"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/rlSettingHeadingBottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tool_bar" >
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/bSettingCancel"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/bSettingSave"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/save"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/tvSettingAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSettingHeadingText"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:text="@string/address"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etSettingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSettingAddress"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_custom"
+        android:gravity="left|bottom"
+        android:hint="@string/setting_hint"
+        android:imeOptions="actionNext"
+        android:paddingLeft="7dp"
+        android:popupBackground="#0FFF"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textSize="12sp"
+        android:windowSoftInputMode="stateHidden" />
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/tvSettingShopNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSettingAddress"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:text="@string/shopnumber"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <com.shopper.app.custom.controls.CustomEditText
+        android:id="@+id/etSettingShopNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSettingShopNumber"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_custom"
+        android:gravity="left|bottom"
+        android:hint="@string/shopnumber_hint"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingLeft="7dp"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp"
+        android:windowSoftInputMode="stateHidden" />
+
+    <ProgressBar
+        android:id="@+id/menuProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:maxHeight="30dip"
+        android:maxWidth="30dip"
+        android:minHeight="30dip"
+        android:minWidth="30dip"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <com.shopper.app.custom.controls.CustomEditText
+        android:id="@+id/etsearcharticle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/round_edit_text"
+        android:drawableLeft="@drawable/toolbar_find"        
+        android:gravity="left"
+        android:hint="@string/search"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textCursorDrawable="@null"        
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/bsearchcancel"  />
+
+    <com.shopper.app.custom.controls.CustomButton
+        android:id="@+id/bsearchcancel"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentRight="true"        
+        android:background="@drawable/normal_button"
+        android:text="@string/cancel"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+         />
+    
+
+</merge>

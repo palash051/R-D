@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.mynet.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlLatestUpdateHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tool_bar"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlLatestUpdateHeader"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/application_background"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bTellMeMore"
+            android:layout_width="180sp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tapbutton"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold" 
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/vipd_ot_logo"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bHealthCheckRoutines"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bTellMeMore"
+            android:background="@color/sub_header_text"
+            android:gravity="center"
+            android:text="TAP HERE FOR VOICE COMMAND"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNetworkDoctorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlImageView"
+        android:background="@drawable/application_background" >
+
+        <LinearLayout
+            android:id="@+id/llTap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvNavigationUrl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Tap here for more"
+                android:textColor="#0066ff"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVoicetoText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llTap"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvVoicetoText1"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:text="Voice Command:"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvVoicetoText"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:textColor="#00b050"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMobileNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llVoicetoText"
+            android:orientation="vertical"
+            android:textSize="12sp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvMobileNo"
+                android:layout_width="fill_parent"
+                android:layout_height="25sp"
+                android:text="Your Mobile Number"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCurrentLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llMobileNumber"
+            android:orientation="vertical"
+            android:textSize="12sp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25sp"
+                android:text="Your current location "
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvlatlang"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="No location found"
+                android:textColor="#00b050" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llServingCell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llCurrentLocation"
+            android:orientation="vertical"
+            android:textSize="12sp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25sp"
+                android:text="Serving cell :"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvServingCell"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Serving cell values come here "
+                android:textColor="#00b050" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSignalLevel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llServingCell"
+            android:orientation="vertical"
+            android:textSize="12sp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25sp"
+                android:text="Network Quality"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNetworkCIDRxType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Network Quality vaalues come here"
+                android:textColor="#00b050" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSignalLevel"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <fragment
+                android:id="@+id/mapVip"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlfooter"
+            android:layout_width="fill_parent"
+            android:layout_height="14sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/application_background"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="214sp"
+                android:layout_height="14sp"
+                android:src="@drawable/poweredby" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

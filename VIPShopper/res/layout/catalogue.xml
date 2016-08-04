@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="600dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <ViewFlipper
+            android:id="@+id/vfCatalogue"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000">
+        </ViewFlipper>
+        
+       <android.support.v4.view.ViewPager
+		    android:id="@+id/pager"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/catalogueProgressBar"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="155dp"
+            android:gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/catalogueDiscountProgressBar"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="315dp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</merge>

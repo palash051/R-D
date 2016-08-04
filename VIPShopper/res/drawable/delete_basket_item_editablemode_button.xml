@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/delete_basket_editablemode_selected" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/delete_basket_editable_mode" android:state_focused="true"></item>    
+	<item android:drawable="@drawable/delete_basket_editable_mode"></item>
+
+</selector>

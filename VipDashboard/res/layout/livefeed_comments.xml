@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvMyNetPostTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@color/value_text"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Comments"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_FeedChieldlist"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:background="#ffffff"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+    <RelativeLayout
+        android:id="@+id/rlCommentsSendSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tableRowColor" >
+
+         <EditText
+            android:id="@+id/etCommentsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/bSendComments"
+            android:background="#ffffff"
+            android:hint="comments"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingLeft="10dp"
+            android:textColor="#000000" >
+        </EditText>
+
+        <Button
+            android:id="@+id/bSendComments"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/message_send_button" />
+    </RelativeLayout>
+
+</LinearLayout>

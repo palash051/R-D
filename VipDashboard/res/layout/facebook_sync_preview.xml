@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    
+    <RelativeLayout
+        android:id="@+id/rlLoginHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivheaderlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/header_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivheaderlogo"
+            android:text="MUMTAZ CARE"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/ivProfilePicture"
+        android:layout_below="@+id/rlLoginHeader"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/user_icon"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY" />
+    
+    <TextView 
+        android:id="@+id/tvText"
+        android:layout_below="@+id/ivProfilePicture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_border"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Care will access to your public information, friends, location information."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="normal" />   
+        
+    <LinearLayout
+        android:id="@+id/llCreateProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="right" >
+        <ImageView 
+            android:id="@+id/ivSyncWithOutFacebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/delete"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY" />
+        <ImageView 
+            android:id="@+id/ivSyncWithFacebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/countinue_new"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

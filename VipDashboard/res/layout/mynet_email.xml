@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    <RelativeLayout
+        android:id="@+id/rlMyNetEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvMyNetEmailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Email"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/rlMyNetEmailBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMyNetEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+        <EditText 
+            android:id="@+id/etMyNetEmailTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="to"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/signup_edittext_border" />
+        <EditText 
+            android:id="@+id/etMyNetEmailSubject"
+            android:layout_below="@+id/etMyNetEmailTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:hint="subject"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:inputType="textEmailSubject"
+            android:background="@drawable/signup_edittext_border" />
+        <EditText 
+            android:id="@+id/etMyNetEmailBody"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/etMyNetEmailSubject"
+            android:layout_marginTop="3dp"
+            android:hint="message body"
+            android:singleLine="false"
+            android:lines="5"
+            android:gravity="top|left"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:background="@drawable/signup_edittext_border"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/bMyNetEmailSendEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/etMyNetEmailBody"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/sub_header_text"
+            android:text="Send"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discussion_fragment_root_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background" >
+
+    <RelativeLayout
+        android:id="@+id/rlDiscussionTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="#0000FF" >
+
+        <TextView
+            android:id="@+id/tvDiscussionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="Network Manager"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlDiscussionTitle"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/tvMessageBoxGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rlMessageSend"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" >
+
+            <EditText
+                android:id="@+id/etMessageGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/bSendMessageGroup"
+                android:background="#ffffff"
+                android:hint="Message"
+                android:inputType="text"
+                android:maxLines="20"
+                android:paddingLeft="10dp"
+               android:textColor="#000000" 
+               android:textSize="12sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/bSendMessageGroup"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:text="Send" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbGroupDiscussion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

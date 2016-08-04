@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/captureframebg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/capturedimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/barcodedummy"
+            android:visibility="visible"
+            android:contentDescription="@string/todo" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/capturedbarcodetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/list_item_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/rlsearcharticletopbar"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvarticleItemText"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/main_article"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+             />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvsubarticleItemText"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/sub_article"
+            android:textColor="@color/subTextColor"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBasketItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center|right" >
+    </RelativeLayout>
+
+</LinearLayout>

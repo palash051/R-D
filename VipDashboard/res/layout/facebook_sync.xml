@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    
+    <RelativeLayout
+        android:id="@+id/rlLoginHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivheaderlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/header_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ivheaderlogo"
+            android:text="MUMTAZ CARE"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tvMessage"
+        android:layout_below="@+id/rlLoginHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="We recommend you to sync with Facebook"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+    <RelativeLayout
+        android:id="@+id/llProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_icon" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/llCreateProfile"
+        android:layout_below="@+id/llProfilePicture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp" >
+        <ImageView 
+            android:id="@+id/ivSyncWithOutFacebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/delete"
+            android:scaleType="fitXY" />
+        <ImageView 
+            android:id="@+id/ivSyncWithFacebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/countinue_new"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Facebook sync will help us to setup your profile automatically"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

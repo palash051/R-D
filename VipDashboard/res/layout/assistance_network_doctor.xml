@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rlLatestUpdateHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tool_bar"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        
+        android:id="@+id/rlNetworkDoctorLayout" 
+        android:layout_below="@+id/rlLatestUpdateHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/application_background" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/doctor" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/image"
+            android:text="Problem Text Will Come here"
+            android:textColor="@color/header_text"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bTellMeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image"
+            android:background="@color/sub_header_text"
+            android:text="Touch here to report your problem."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/bHealthCheckRoutines"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/sub_header_text"
+            android:gravity="center"
+            android:text="Or Tap here for voice instruction [Once told, voice command will come here]"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/llAssistanceNetworkDoctorList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bHealthCheckRoutines"
+            android:orientation="vertical" >
+            
+        <TextView
+            android:id="@+id/tvMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llAssistanceNetworkDoctorList"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Your Mobile No"
+            android:textColor="@color/sub_header_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+             
+             <TextView
+            android:id="@+id/tvlatlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Latitude,Longitude"
+            android:textColor="@color/sub_header_text"/>
+
+       
+        
+        <TextView
+            android:id="@+id/tvNetworkCIDRxType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvlatlang"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="3G RNC-CID/LAC"
+            android:textColor="@color/sub_header_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        
+        <fragment
+            android:id="@+id/mapVip"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="5dp" />
+
+            <ListView
+                android:id="@+id/lvAssistanceNetworkDoctorListView"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.42"
+                android:divider="@color/list_diverder"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:visibility="gone"
+                android:scrollbars="vertical"
+                android:scrollingCache="false" />
+            
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlfooter" 
+        android:layout_below="@+id/rlNetworkDoctorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+         <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/poweredby" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

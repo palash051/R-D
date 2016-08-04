@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlTopHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlProfileTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tvProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="PROFILE VIEW"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/facebook_button"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/facebook" />
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProfileTitle"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivProfilePicture"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/profile_pic_border"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_icon" />
+
+            <TextView
+                android:id="@+id/tvChangePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProfilePicture"
+                android:layout_gravity="bottom|left"
+                android:layout_marginTop="2dp"
+                android:text="Change Profile Picture"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvChangePasswrod"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProfilePicture"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/tvChangePicture"
+                android:gravity="right"
+                android:text="Change Password"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/ivProfilePicture"
+                android:orientation="vertical"
+                android:paddingLeft="8dp" >
+
+                <LinearLayout
+                    android:id="@+id/llUserInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:paddingTop="2dp"
+                        android:textColor="@color/profileHeadertextColor"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivUserStatus"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/user_status_online" />
+
+                    <Spinner
+                        android:id="@+id/spUserStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/profileHeadertextColor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rlAbout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_edittext_border" >
+
+                <ImageView
+                    android:id="@+id/ivAboutMeNormal"
+                     android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/aboutme_normal"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivAboutMeSelected"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                       android:layout_centerInParent="true"
+                    android:src="@drawable/aboutme_selected"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAllFriends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_edittext_border" >
+
+                 <ImageView
+                    android:id="@+id/ivFriendNormal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/friend_normal" />
+
+                <ImageView
+                    android:id="@+id/ivFriendSelected"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/friend_selected"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/vsAboutMe"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlmenu"
+        android:inflatedId="@+id/userAboutMe"
+        android:layout="@layout/user_about_me" />
+
+    <ViewStub
+        android:id="@+id/vsFriends"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlmenu"
+        android:inflatedId="@+id/userFriends"
+        android:layout="@layout/user_friend_list"
+        android:visibility="gone" />
+
+</LinearLayout>

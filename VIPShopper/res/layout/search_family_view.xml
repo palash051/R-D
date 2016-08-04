@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_item_bg"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:id="@+id/rlsearchfamilydefaultheader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height">
+
+        <include
+            android:id="@+id/searchfamilydefault"
+            layout="@layout/search_family_view_header_default" />
+    </RelativeLayout>
+
+   <!-- <RelativeLayout
+        android:id="@+id/rlsearcharticle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+	    android:background="@drawable/layout_top_background"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical" >
+
+        <include
+            layout="@layout/search_family_view_header_search" />
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/rlfamilylist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/familylist"
+            layout="@layout/familylist" />
+    </RelativeLayout>
+
+   
+
+</LinearLayout>

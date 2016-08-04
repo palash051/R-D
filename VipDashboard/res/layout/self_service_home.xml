@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background" >
+    <TextView 
+        android:id="@+id/tvSelfServiceHeaderBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Self Service Menu"
+        android:gravity="center"
+        android:textColor="#858585"
+        android:textSize="15sp" />
+
+     <GridView
+        android:id="@+id/grid"
+        android:layout_below="@+id/tvSelfServiceHeaderBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:layout_margin="5dp"
+        android:numColumns="3"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" >
+    </GridView>
+    
+</RelativeLayout>
+

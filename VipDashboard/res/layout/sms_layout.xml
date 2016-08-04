@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/smsGraph"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/svSMSInformation"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/smsGraph" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rlIncomingSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvSMSIncoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Incoming SMS"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvSMSIncomingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="#000000" 
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlOutgoingSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlIncomingSMS"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvSMSOutgoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Outgoing SMS"
+                    android:textColor="@color/sub_header_text" 
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvSMSOutgoingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="#000000" 
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            <TextView 
+                android:id="@+id/SMSTotalHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlOutgoingSMS"
+                android:text="Total"
+                android:textColor="@color/header_text"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:id="@+id/rlTotalIncomingSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SMSTotalHeader"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvTotalSMSIncoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Incoming SMS"
+                    android:textColor="@color/sub_header_text" 
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvTotalSMSIncomingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="#000000" 
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rlTotalOutgoingSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTotalIncomingSMS"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvTotalSMSOutgoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Outgoing SMS"
+                    android:textColor="@color/sub_header_text" 
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvTotalSMSOutgoingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="#000000" 
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            <TextView 
+                android:id="@+id/SMSExtraHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTotalOutgoingSMS"
+                android:text="Extra"
+                android:textColor="@color/header_text"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp" 
+                android:textSize="12sp"/>
+            <RelativeLayout
+                android:id="@+id/rlExEstimatedOutgoingSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SMSExtraHeader"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvEstimatedSMSOutgoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Estimated Outgoing SMS"
+                    android:textColor="@color/sub_header_text" 
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvEstimatedSMSOutgoingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="#000000" 
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rlAvgOutgoingSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlExEstimatedOutgoingSMS"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvAvgSMSOutgoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Average Outgoing SMS"
+                    android:textColor="@color/sub_header_text" 
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvAvgSMSOutgoingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="#000000" 
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rlAvgIncomingSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlAvgOutgoingSMS"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvAvgIncomingSMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Average Incoming SMS"
+                    android:textColor="@color/sub_header_text" 
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvAvgIncomingSMSValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

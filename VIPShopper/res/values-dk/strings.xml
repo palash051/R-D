@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2010 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">Shopper</string>
+    <string name="hyperlink"><a href="http://www.google.com/">betingelser</a></string>
+     <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="my_password">my password</string>
+     <string name="user">Bruger</string>
+    <string name="mandatory">*</string>
+    <string name="login">Log In</string>
+    <string name="wronguserpass">Forkert brugernavn eller password</string>
+    <string name="button_yes">Ja</string>
+    <string name="button_no">Nej</string>
+   
+    <string name="button_ok">OK</string>
+    <string name="msg_default_status">Hold stregkoden midt billedet</string>
+    <string name="preferences_actions_title">When a barcode is found\u2026</string>
+    <string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+    <string name="preferences_bulk_mode_title">Bulk scan mode</string>
+    <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+    <string name="preferences_custom_product_search_summary" formatted="false">Use %s as a placeholder for the product ID, and %f for format</string>
+    <string name="preferences_custom_product_search_title">Custom search URL</string>
+    <string name="preferences_decode_1D_title">1D barcodes</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_QR_title">QR Codes</string>
+    <string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+    <string name="preferences_front_light_title">Use front light</string>
+    <string name="preferences_general_title">General settings</string>
+    <string name="preferences_name">Settings</string>
+    <string name="preferences_play_beep_title">Beep</string>
+    <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+    <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+    <string name="preferences_reverse_image_summary">Enable on devices with a front camera only</string>
+    <string name="preferences_reverse_image_title">Reversed camera image</string>
+    <string name="preferences_result_title">Result settings</string>
+    <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+    <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+    <string name="preferences_supplemental_title">Retrieve more info</string>
+    <string name="preferences_vibrate_title">Vibrate</string>
+
+    
+
+    
+    <string name="empty_basket">Kurv (tom)</string>
+    <string name="basket">Kurv</string>
+    <string name="BasketDiscountItemHeaderText">Andre varer i samme rabatgruppe:</string>
+    <string name="basket_back_button">Tilbage</string>
+    <string name="username">Brugernavn</string>
+    <string name="password">Adgangskode *</string>
+    <string name="password1">Kodeord</string>
+    <string name="confirm_password">Bekræft adgangskode *</string>
+    <string name="address">Server Adresse:</string>
+    <string name="shopnumber">Shop-nummer:</string>
+
+
+    <string name="terms_conditions">Handelsbetingelser</string>
+    <string name="more">More</string>
+   
+
+    <string name="delete">Delete</string>
+    <string name="add_item">Tilfoj Vare</string>
+    <string name="indtastEan">Indtast stregkode nr. (EAN):</string>
+    <string name="hentbon">Hent bon</string>
+    <string name="bonnummer">Indtast bonnummer:</string>
+    <string name="todo">TODO</string>
+    <string name="smsnumber_error">Angiv SMS Nummer</string>
+    <string name="address_error">Adresse 1 kan ikke være tom</string>
+    <string name="postnumber_error">Postnummer kan ikke være tom</string>
+    <string name="cityname_error">By kan ikke være tom</string>
+    <string name="merchant_id">90078491</string>
+    <string name="currency_code">DKK</string>
+    <string name="order_id">42</string>
+    <string name="dk">DK</string>
+    <string name="visa">VISA</string>
+    <string name="v_dk">V-DK</string>
+    <string name="update_profile">Brugerprofil</string>
+    <string name="check_barcode_status">Ingen varer pï¿½ bon</string>
+    <string name="indtast_login_">"Indtast login "</string>
+    <string name="in_store_pay">I Butik</string>
+    <string name="online_pay">Visa/Dankort</string>
+    <string name="payment_by_cash">Betaling ved kasse</string>
+    <string name="loading_bon">Henter bon</string>
+    <string name="exit_bon">Afslut Bon</string>
+    <string name="delivery_payment">Levering/Betaling</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delivery">Levering</string>
+    <string name="other_address">Til anden adresse</string>
+    <string name="adresse1">Adresse1</string>
+    <string name="adresse1x">Adresse 1  *</string>
+    <string name="adresse2x">Adresse 2  *</string>
+    <string name="adresse2">Adresse2</string>
+    <string name="post_number">Postnummer</string>
+    <string name="post_number1">Postnummer *</string>
+    <string name="city">By</string>
+    <string name="city1">By   *</string>
+    <string name="phone">Telefon</string>
+    <string name="phone1">Telefon  *</string>
+    <string name="delivery_date">Leveringsdag</string>
+    <string name="sms_on_delivery">Sms ved levering</string>
+    <string name="sms_number">SMS nummer</string>
+    <string name="enter_discount_code">Indtast din rabatkode</string>
+    <string name="enter_code">Indtast kode</string>
+    <string name="buy">Tiføj</string>
+    <string name="to_pay">Til betaler</string>
+    <string name="setting_hint"> http://my.server.address</string>
+    <string name="shopnumber_hint"> shop number</string>
+    <string name="menu_basket_title"> 00.00dk </string>
+    <string name="configure">Configure</string>
+    <string name="skan_product">Skan vare</string>
+    <string name="find_product">Find Vare</string>
+    <string name="offers">Tilbudsavis</string>
+    <string name="settings">Indstillinger</string>
+    <string name="status">Status</string>
+    <string name="confirm">Godkend</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="shipping">Fragt</string>
+    <string name="packaging">Emballage</string>
+    <string name="vat">Moms</string>
+    <string name="total">Total</string>
+    <string name="zero">00</string>
+    <string name="e_mail">E-mail *</string>
+    <string name="first_name">Navn *</string>
+    <string name="last_name">Efternavn  *</string>
+    <string name="accept_terms">"Du accepterer disse betingelser. Læs dem omhyggeligt. "</string>
+    <string name="family_name">Family Name</string>
+    <string name="article">Article</string>
+    <string name="main_article">Main Article</string>
+    <string name="sub_article">Sub Article</string>
+    <string name="search">Search</string>
+    <string name="group">Group</string>
+    <string name="servernotFound">Server Ikke Found.Please en gyldig server-adresse.</string>
+    <string name="serverswitchError">Server kontakt fejl\nVare ikke fundet.</string>
+    <string name="networkError">Utilgængelig netværk. Tjek venligst din netværksforbindelse.</string>
+    <string name="dateselectionError">Valgt Forkert dato. Du kan ikke vælge Date Mindre end Aktuel dato.</string>
+    <string name="beforesaveUrlmsg">Eventuelle ikke-gemte data går tabt. Ønsker du at fortsætte?</string>
+    <string name="loginsuccessmsg">Log ind Vellykket.</string>
+    <string name="CancelBasketmsg">Er du sikker på du vil afslutte din ordre?</string>
+    <string name="loginerrorsmsg">brugernavn eller password forkert. Opret ny bruger?</string>
+    <string name="usernameerror">Brugernavn kan ikke være tom.</string>
+    <string name="emailerror">Indtast venligst gyldig e-mail-adresse.</string>
+    <string name="passworderror">Adgangskode kan ikke være tom.</string>
+    <string name="passwordlengtherror">Kodeord skal indeholde mindst 6 tegn.</string>
+    <string name="passwordcnfrmerror">Adgangskode ikke matchede.</string>
+    <string name="firstnameerror">Navn kan ikke være tom.</string>
+    <string name="addresserror">Adresse 1 kan ikke være tom.</string>
+    <string name="postnumerror">Postnummer kan ikke være tom.</string>
+    <string name="citynameerror">Byen kan ikke være tom.</string>
+    <string name="telnumerror">bedes oplyse dit telefonnummer.</string>
+    <string name="ordernumError">ukendt ordrenummer.</string>
+    <string name="productError">Ukendt vare.</string>
+    <string name="set_focus">Indstiller fokus.</string>
+    <string name="alert_dlg_yes">Yes</string>
+    <string name="alert_dlg_no">No</string>
+    <string name="brcd_img_middle">Hold stregkoden midt billedet</string>
+    <string name="brcd_press_focus">Tryk på stregkoden for at fokusere</string>
+    <string name="phone_silent">Hold telefon stille</string>
+    <string name="ClientProtocolExceptionMessage">Server støder på et problem for http-protokollen. Kontakt venligst med din admin serveradresse.</string>
+    <string name="IllegalStateExceptionMessage">Server støder på et problem for Ulovlig http stat. Kontakt venligst med din admin.</string>
+    <string name="UnsupportedEncodingExceptionMessage">Server støder på et problem for understøttet kodning. Kontakt venligst med din admin.</string>
+    <string name="IOExceptionMessage">Server støder på et problem for server. Kontakt venligst med din admin.</string>
+    <string name="GeneralExceptionMessage">Server støder på et problem. Kontakt venligst med din admin.</string>
+    <string name="payment_success">Tillykke! Din betaling er vellykket.</string>
+    <string name="payment_mode_subtotal">00</string>
+  	<string name="servercontactfaillistnotfound">Server kontakt fejl\nlist ikke fundet</string>
+    <string name="onlinepaymentstep1">Step - 1</string>
+    <string name="onlinepaymentstep2">Step - 2</string>    
+
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="CPU Management"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+
+
+   
+		<RelativeLayout
+		    android:id="@+id/rlbatterydoctorl1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="100dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:orientation="horizontal" >
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:orientation="horizontal" >
+		
+		<RelativeLayout 
+		     android:id = "@+id/rlCoreOne"
+		   
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="50dp"
+		     android:orientation="horizontal" >
+		    
+		    <ImageView
+		        android:id="@+id/ivcr1"
+		        android:layout_width="40dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="30dp"
+		        android:src="@drawable/cpu_management_core" />
+		    
+
+		    <TextView
+		        android:id="@+id/tvCr1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivcr1"
+		        android:text="Core1"
+		        android:textColor="#FFFFFF"
+		        android:textSize="12sp" />
+
+		    <TextView
+		        android:id="@+id/tvCr1mh"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_below="@+id/tvCr1"
+		        
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivcr1"
+		        android:text="800 MHz"
+		        android:textColor="#000000"
+		        android:textSize="12sp" />
+		</RelativeLayout>    
+		    
+	<RelativeLayout 
+	    	android:id="@+id/rlCoretwo"
+		    android:layout_width="0dp"
+		     android:layout_height="50dp"
+		     android:orientation="horizontal"
+		     android:layout_weight="1"
+		     android:layout_marginLeft="10dp"
+		     
+		      >
+		    
+		    <ImageView
+		        android:id="@+id/ivrcr2"
+		        android:layout_width="40dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="30dp"
+		        android:src="@drawable/cpu_management_core" />
+		    
+
+		    <TextView
+		        android:id="@+id/tvrCr2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivrcr2"
+		        android:text="Core2"
+		        android:textColor="#FFFFFF"
+		        android:textSize="12sp" />
+
+		    <TextView
+		        android:id="@+id/tvCr2mh"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_below="@+id/tvrCr2"
+		        
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivrcr2"
+		        android:text="1000 MHz"
+		        android:textColor="#000000"
+		        android:textSize="12sp" />
+		</RelativeLayout>    
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:orientation="vertical" >
+	
+	  <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		  								 >
+		
+		<RelativeLayout
+		    android:id="@+id/rlCoreThree" 
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		     android:layout_height="50dp"
+		     android:orientation="horizontal" >
+		    
+		    <ImageView
+		        android:id="@+id/ivcr3"
+		        android:layout_width="40dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="30dp"
+		        android:src="@drawable/cpu_management_core" />
+		    
+
+		    <TextView
+		        android:id="@+id/tvCr3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivcr3"
+		        android:text="Core3"
+		        android:textColor="#FFFFFF"
+		        android:textSize="12sp" />
+
+		    <TextView
+		        android:id="@+id/tvCr3mh"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_below="@+id/tvCr3"
+		        
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivcr3"
+		        android:text="1000 MHz"
+		        android:textColor="#000000"
+		        android:textSize="12sp" />
+		</RelativeLayout>    
+		    
+	  <RelativeLayout 
+	       android:id="@+id/rlCorefour"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		     android:layout_height="50dp"
+		      android:layout_marginLeft="10dp"
+		     android:orientation="horizontal"
+		     >
+		    
+		    <ImageView
+		        android:id="@+id/ivcr4"
+		        android:layout_width="40dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="30dp"
+		        android:src="@drawable/cpu_management_core" />
+		    
+
+		    <TextView
+		        android:id="@+id/tvCr4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivcr4"
+		        android:text="Core4"
+		        android:textColor="#FFFFFF"
+		        android:textSize="12sp" />
+
+		    <TextView
+		        android:id="@+id/tvCr4mh"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20sp"
+		        android:layout_below="@+id/tvCr4"
+		        
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/ivcr4"
+		        android:text="100 MHz"
+		        android:textColor="#000000"
+		        android:textSize="12sp" />
+		</RelativeLayout>    
+		</LinearLayout>
+		</LinearLayout>
+				   
+		</RelativeLayout>
+	<RelativeLayout
+                android:id="@+id/rlbatterydoctorCpuManagement"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvCPUmange"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="CPU Management"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+
+                <ImageView
+                    android:id="@+id/ivBaterydoctorSwitchStatusOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignRight="@+id/tvCPUmange"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/b_switchon" />
+                
+                <ImageView
+                    android:id="@+id/ivBaterydoctorSwitchStatusOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignRight="@+id/tvCPUmange"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/b_switchoff" 
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+			<View
+			        android:layout_width="fill_parent"
+			        android:layout_height="1dp"
+			        android:background="@drawable/battery_doctor_divider" 
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"/>
+            <RelativeLayout
+                android:id="@+id/rlOpendip"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tvOpenDip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Open Dip-Server to extend time"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/linearLayout1"
+                    android:src="@drawable/rifght_arrow1" />
+            </RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlTips"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvTips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tips :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+				<TextView
+                    android:id="@+id/tvThisUderlock"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="This will underlock the CPU When the screen is off to signficantly reduce power consupmtion"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/tvTips"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+</LinearLayout>
+

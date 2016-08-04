@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.mynet.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:id="@+id/llDashboardTab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/value_text"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvPLMN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PLMN"
+            android:textColor="@color/bottom_text_color"
+            android:background="@drawable/tab_background_selected"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+       <TextView
+            android:id="@+id/tvRegion"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Region"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPlatinumCluster"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Platinum Cluster"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tvSPISummary"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SPI Summary"
+            android:visibility="gone"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDeshboardReportTitle"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/llDashboardTab"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvDeshboardReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:text="DashBoard"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llDeshBoardLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlDeshboardReportTitle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtExperienceView"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="@color/tabHeaderText"
+            android:gravity="center"
+            android:text="Header Text Will come here"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDashboardMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="Update as of "
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlDashboardAcquisition"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/home_item_bg" >
+
+                <!--
+                     <ImageView
+                    android:id="@+id/bDashboardAcquisition"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_90"
+                    android:contentDescription="JIJI" />
+                -->
+
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvDashboardAcquisition"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvDashboardFirstTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvDashboardAcquisition"
+                    android:layout_centerHorizontal="true"
+                    android:text="Accessibility"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDashboardAcquisitionValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDashboardFirstTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="90"
+                    android:textColor="#00B050"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDashboardRetention"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/home_item_bg" >
+
+                <!-- <ImageView
+                    android:id="@+id/bDashboardRetention"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_92"
+                    android:contentDescription="JIJI" /> -->
+                
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvDashboardRetention"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvDashboardSecondTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/gvDashboardRetention"
+                    android:layout_below="@+id/gvDashboardRetention"
+                    android:text="Retainability"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDashboardRetentionValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDashboardSecondTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="92"
+                    android:textColor="#00B050"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDashboardEfficiency"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/home_item_bg" >
+
+                <!-- <ImageView
+                    android:id="@+id/bDashboardEfficiency"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_89"
+                    android:contentDescription="JIJI" /> -->
+                
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvDashboardEfficiency"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvDashboardThirdTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvDashboardEfficiency"
+                    android:layout_centerHorizontal="true"
+                    android:text="Integrity"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDashboardEfficiencyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDashboardThirdTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="89"
+                    android:textColor="#00B050"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlDashboardTraffic"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/home_item_bg" >
+
+                <!-- <ImageView
+                    android:id="@+id/bDashboardTraffic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_25"
+                    android:contentDescription="JIJI" /> -->
+                
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvDashboardTraffic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvDashboardForthTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/gvDashboardTraffic"
+                    android:layout_below="@+id/gvDashboardTraffic"
+                    android:text="Availability"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDashboardTrafficValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDashboardForthTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="25"
+                    android:textColor="#00B050"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDashboardMTR"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/home_item_bg" >
+
+                <!-- <ImageView
+                    android:id="@+id/bDashboardMTR"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_70"
+                    android:contentDescription="JIJI" /> -->
+                
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvDashboardMTR"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvDashboardMTRValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDashboardFifthTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="70"
+                    android:textColor="#00B050"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDashboardFifthTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvDashboardMTR"
+                    android:layout_centerHorizontal="true"
+                    android:text="Mobility"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDashboardSelfService"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/home_item_bg" >
+
+                <!-- <ImageView
+                    android:id="@+id/bDashboardSelfService"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/speedo_50"
+                    android:contentDescription="JIJI" /> -->
+                
+                <com.vipdashboard.app.customcontrols.GaugeView
+                    android:id="@+id/gvDashboardSelfService"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvDashboardSixthTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gvDashboardSelfService"
+                    android:layout_centerHorizontal="true"
+                    android:text="Data"
+                    android:textColor="@color/sub_header_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDashboardSelfServiceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDashboardSixthTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="50"
+                    android:textColor="#00B050"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:gravity="right"
+                android:text="Please touch any dial for trend and details"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bar"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+
+            <!-- <Button
+                android:id="@+id/bManagement"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dashboard_report_management"
+                android:textSize="16sp" /> -->
+            <RelativeLayout
+                android:id="@+id/rlDashboardReportManagement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/bMyExperience"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dashboard_report_management" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bMyExperience"
+                    android:layout_centerHorizontal="true"
+                    android:text="Management"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- <Button
+                android:id="@+id/bTecnical"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/technical"
+                android:textSize="16sp" /> -->
+            <RelativeLayout
+                android:id="@+id/rlDashboardReportTechnical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/bSelfcare_Myprofile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dashboard_report_technical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bSelfcare_Myprofile"
+                    android:layout_centerHorizontal="true"
+                    android:text="Technical"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rlDashboardTroubleTicket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/bDashboardTroubleTicket"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/my_troubletickets" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bDashboardTroubleTicket"
+                    android:layout_centerHorizontal="true"
+                    android:text="Trouble Ticket"
+                    android:textColor="@color/bottom_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- <Button
+                android:id="@+id/bTroubleTicket"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/my_troubletickets"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bSendUnionCollaboration"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Send Union Collaboration"
+                android:textSize="16sp"
+                android:visibility="gone" /> -->
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/ivHomepageFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:contentDescription="HomeService"
+        android:src="@drawable/dashboard_footer" />
+    
+    <ProgressBar
+        android:id="@+id/pbDashBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+</RelativeLayout>

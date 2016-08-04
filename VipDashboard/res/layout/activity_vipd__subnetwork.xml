@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlLatestUpdateHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/tool_bar"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llShowingHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rlLatestUpdateHeader"
+        android:background="@color/value_text"
+         android:textColor="@color/bottom_text_color"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:id="@+id/llShowingTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llShowingHeader"
+        android:orientation="vertical" >
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llShowingGaugeView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llShowingTitle"
+        android:orientation="horizontal" >
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlOnlinePaymentDeleverHeadingMain"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_item_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/tvOnlinePaymentDeleverHeadingText"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/tool_bar"
+        android:text="@string/onlinepaymentstep1"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/rlOnlinePaymentDeleverBottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tool_bar" >
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/bNextFromDeliveryPayment"
+            android:layout_width="@dimen/bottom_bar_icon_width"
+            android:layout_height="@dimen/bottom_bar_icon_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/next"
+            android:paddingRight="5dp" />
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/bCancel1"
+            android:layout_width="@dimen/bottom_bar_icon_width"
+            android:layout_height="@dimen/bottom_bar_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_margin="1dp"
+            android:layout_toLeftOf="@+id/bNextFromDeliveryPayment"
+            android:background="@drawable/cancel"
+            android:paddingRight="5dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svOnlinePaymentDelevery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rlOnlinePaymentDeleverBottomBar"
+        android:layout_below="@+id/tvOnlinePaymentDeleverHeadingText" >
+
+        <LinearLayout
+            android:id="@+id/lnOnlinePaymentDelevery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/list_item_bg"
+            android:orientation="vertical" >
+
+            <com.shopper.app.custom.controls.CustomTextView
+                android:id="@+id/tvOnlinePaymentDeleverHeadingTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/delivery"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rlInvoiceAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <CheckBox
+                    android:id="@+id/cbToPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dp"
+                    android:button="@layout/custom_checkbox"
+                    android:gravity="right" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvToPay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/cbToPay"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/cbToPay"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/to_pay"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/cbToAnotherAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/cbToPay"
+                    android:layout_marginLeft="2dp"
+                    android:button="@layout/custom_checkbox" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvToAnotherAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/cbToAnotherAddress"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tvToPay"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/cbToAnotherAddress"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/other_address"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rlToALtrntAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="true"
+                    android:visibility="invisible" >
+
+                    <com.shopper.app.custom.controls.CustomTextView
+                        android:id="@+id/tvALtrntAddress1"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/etALtrntAddress1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/adresse1"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.shopper.app.custom.controls.CustomEditText
+                        android:id="@+id/etALtrntAddress1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/tvALtrntAddress1"
+                        android:background="@drawable/edit_text_custom"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="7dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textCursorDrawable="@drawable/custom_cursor"
+                        android:textSize="12sp"
+                        android:windowSoftInputMode="stateHidden" />
+
+                    <com.shopper.app.custom.controls.CustomTextView
+                        android:id="@+id/tvALtrntAddress2"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/etALtrntAddress2"
+                        android:layout_below="@+id/etALtrntAddress1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/adresse2"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.shopper.app.custom.controls.CustomEditText
+                        android:id="@+id/etALtrntAddress2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etALtrntAddress1"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvALtrntAddress2"
+                        android:background="@drawable/edit_text_custom"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="7dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textCursorDrawable="@drawable/custom_cursor"
+                        android:textSize="12sp"
+                        android:windowSoftInputMode="stateHidden" />
+
+                    <com.shopper.app.custom.controls.CustomTextView
+                        android:id="@+id/tvALtrntAddressPostnummer"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/etALtrntAddressPostnummer"
+                        android:layout_below="@+id/etALtrntAddress2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="@string/post_number"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.shopper.app.custom.controls.CustomEditText
+                        android:id="@+id/etALtrntAddressPostnummer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etALtrntAddress2"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvALtrntAddressPostnummer"
+                        android:background="@drawable/edit_text_custom"
+                        android:inputType="number"
+                        android:paddingLeft="7dp"
+                        android:textColor="@color/white"
+                        android:textCursorDrawable="@drawable/custom_cursor"
+                        android:textSize="12sp"
+                        android:windowSoftInputMode="stateHidden" />
+
+                    <com.shopper.app.custom.controls.CustomTextView
+                        android:id="@+id/tvALtrntAddressBy"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etALtrntAddressPostnummer"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="@string/city"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.shopper.app.custom.controls.CustomEditText
+                        android:id="@+id/etALtrntAddressBy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/etALtrntAddressPostnummer"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvALtrntAddressBy"
+                        android:background="@drawable/edit_text_custom"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="7dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textCursorDrawable="@drawable/custom_cursor"
+                        android:textSize="12sp"
+                        android:windowSoftInputMode="stateHidden" />
+
+                    <com.shopper.app.custom.controls.CustomTextView
+                        android:id="@+id/tvALtrntAddressTelepon"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etALtrntAddressBy"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="@string/phone"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.shopper.app.custom.controls.CustomEditText
+                        android:id="@+id/etALtrntAddressTelepon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etALtrntAddressBy"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvALtrntAddressTelepon"
+                        android:background="@drawable/edit_text_custom"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:paddingLeft="7dp"
+                        android:textColor="@color/white"
+                        android:textCursorDrawable="@drawable/custom_cursor"
+                        android:textSize="12sp"
+                        android:windowSoftInputMode="stateHidden" />
+                </RelativeLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rlDeliverydate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <com.shopper.app.custom.controls.CustomButton
+                    android:id="@+id/bDeliverydate"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/calendar"
+                    android:textStyle="bold" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvDeliverydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/bDeliverydate"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="2dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvDeliverydateTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tvDeliverydate"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/delivery_date"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSmsOnDelivery"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <CheckBox
+                    android:id="@+id/cbSmsOnDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:button="@layout/custom_checkbox" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSmsOnDelivery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/cbSmsOnDelivery"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sms_on_delivery"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSMSNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvSMSNumber"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sms_number"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.shopper.app.custom.controls.CustomEditText
+                    android:id="@+id/etSMSNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_toRightOf="@+id/tvSMSNumber"
+                    android:background="@drawable/edit_text_custom"
+                    android:enabled="false"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@drawable/custom_cursor"
+                    android:textSize="12sp"
+                    android:windowSoftInputMode="stateHidden" />
+            </RelativeLayout>
+
+            <com.shopper.app.custom.controls.CustomTextView
+                android:id="@+id/tvEnterYourDiscountCode"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/enter_discount_code"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlEnterCode"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <com.shopper.app.custom.controls.CustomButton
+                    android:id="@+id/bEnterCode"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/highlighted_button"
+                    android:text="@string/buy"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.shopper.app.custom.controls.CustomTextView
+                    android:id="@+id/tvEnterCode"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/etEnterCode"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/enter_code"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.shopper.app.custom.controls.CustomEditText
+                    android:id="@+id/etEnterCode"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/bEnterCode"
+                    android:background="@drawable/edit_text_custom"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@drawable/custom_cursor"
+                    android:textSize="12sp"
+                    android:windowSoftInputMode="stateHidden" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

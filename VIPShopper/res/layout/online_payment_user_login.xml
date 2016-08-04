@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_bg"
+    android:orientation="vertical" >
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/tvOnlinePaymentLoginHeadingText"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/tool_bar"
+        android:text="@string/indtast_login_"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/rlOnlinePaymentUserInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tvOnlinePaymentLoginHeadingText"
+        android:layout_marginTop="10dp"
+        android:background="@color/list_item_bg"
+        android:orientation="vertical" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvUserNameMendetory"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/etUserName"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/mandatory"
+            android:textColor="@color/mendatory_text_color"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <com.shopper.app.custom.controls.CustomEditText
+            android:id="@+id/etUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_custom"
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingLeft="7dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:windowSoftInputMode="stateHidden" >
+        </com.shopper.app.custom.controls.CustomEditText>
+        
+         
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvUserPasswordMendetory"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/etUserPassword"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/mandatory"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <com.shopper.app.custom.controls.CustomEditText
+            android:id="@+id/etUserPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/etUserName"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_custom"
+            android:hint="@string/password1"
+            android:inputType="textPassword"
+            android:paddingLeft="7dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/custom_cursor" >
+        </com.shopper.app.custom.controls.CustomEditText>
+        
+        
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/bUserLogin"
+            android:layout_width="315dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/etUserPassword"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/normal_rounded_button_bg"
+            android:drawableLeft="@drawable/user_login_icon"
+            android:text="@string/login"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/rlBottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tool_bar" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvUpdateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+
+         <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/bUpatepro"
+            android:layout_width="@dimen/bottom_bar_icon_width"
+            android:layout_height="@dimen/bottom_bar_icon_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_user" />
+    </RelativeLayout>
+
+</RelativeLayout>

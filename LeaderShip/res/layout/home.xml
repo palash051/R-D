@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tvApplicationTopHeader"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/application_top_header"
+            android:gravity="center"
+            android:text="RMEA AT A GLANCE"
+            android:textColor="@color/application_top_header_title_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/leadership" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlHomeFinance"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivHomeFinance"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home_finance" />
+
+            <TextView
+                android:id="@+id/tvHomeFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivHomeFinance"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="FINANCE"
+                android:textColor="@color/home_menu_item_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHomeNetworkKpi"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivHomeNetworkKpi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home_network_kpi" />
+
+            <TextView
+                android:id="@+id/tvHomeNetworkKpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivHomeNetworkKpi"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="NETWORK KPI"
+                android:textColor="@color/home_menu_item_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlHomeOperator"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivHomeOperator"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home_operator" />
+
+            <TextView
+                android:id="@+id/tvHomeOperator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivHomeOperator"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="OPERATOR"
+                android:textColor="@color/home_menu_item_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHomeCollaboration"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivHomeCollaboration"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home_collaboration" />
+
+            <TextView
+                android:id="@+id/tvHomeCollaboration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivHomeCollaboration"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="COLLABORATION"
+                android:textColor="@color/home_menu_item_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvHomeLatestUpdate"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/home_letest_update_bg"
+            android:gravity="center"
+            android:text="Latest Update …"
+            android:textColor="@color/application_top_header_title_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home_icon"
+        android:showAsAction="always"
+        android:title="@string/home_menu">
+        <menu>
+           <!--  <item
+                android:id="@+id/menu_homesubmenu"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/homesubmenu"
+                android:title="@string/menu_homesubmenu">
+            </item> -->
+           <!--  <item
+                android:id="@+id/menu_upto_date"
+                android:icon="@drawable/home_upto_date"
+                android:showAsAction="always|withText"
+                android:title="@string/upto_date_menu">
+            </item> -->
+            <item
+                android:id="@+id/menu_my_profile"
+                android:icon="@drawable/my_profile"
+                android:showAsAction="always|withText"
+                android:title="@string/my_profile">
+            </item>
+               <!--  <item
+                android:id="@+id/menu_dashboard"
+                android:icon="@drawable/dashboard"
+                android:showAsAction="always|withText"
+                android:title="@string/menu_dashboard">
+            </item> -->
+              <item
+                android:id="@+id/manual_sync_menu"
+                android:icon="@drawable/sync"
+                android:showAsAction="always|withText"
+                android:title="@string/manualsync">
+            </item>
+              <item
+                android:id="@+id/menu_applicaton_features"
+                android:icon="@drawable/home_upto_date"
+                android:showAsAction="always|withText"
+                android:title="@string/applicaton_features">
+            </item>
+            <!--    <item
+                android:id="@+id/menu_settings"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/setting"
+                android:title="@string/setting">
+            </item> -->
+          <!--   <item
+                android:id="@+id/menu_engineering_mode"
+                android:icon="@drawable/enginering_mode"
+                android:showAsAction="always|withText"
+                android:title="@string/engineering_mode">
+            </item>
+            <item
+                android:id="@+id/menu_collaboration"
+                android:icon="@drawable/enginering_mode"
+                android:showAsAction="always|withText"
+                android:title="CARE IM">
+            </item> -->
+            <!-- <item
+                android:id="@+id/menu_feed"
+                android:icon="@drawable/enginering_mode"
+                android:showAsAction="always|withText"
+                android:title="CARE FEED">
+            </item> -->
+           <!--   <item
+                android:id="@+id/menu_servicetest"
+                android:icon="@drawable/enginering_mode"
+                android:showAsAction="always|withText"
+                android:title="Service Test">
+            </item> -->
+            <!--
+            <item
+                android:id="@+id/menu_speedtest"
+                android:icon="@drawable/enginering_mode"
+                android:showAsAction="always|withText"
+                android:title="Speed Test">
+            </item> -->
+             <!-- <item
+                android:id="@+id/menu_exit"
+                android:icon="@drawable/user_logout"
+                android:showAsAction="always|withText"
+                android:title="@string/menu_exit">
+            </item> -->
+            
+            
+               
+        
+            <!-- <item
+                android:id="@+id/menu_collaboration"
+                android:icon="@drawable/collaboration"
+                android:showAsAction="always|withText"
+                android:title="@string/collaboration_menu">
+            </item> -->
+            <!-- <item
+                android:id="@+id/menu_monitor_and_rectify"
+                android:icon="@drawable/monitor_and_rectify"
+                android:showAsAction="always|withText"
+                android:title="@string/monitor_and_rectify_menu">
+            </item> -->
+            <!-- <item
+                android:id="@+id/menu_dashboard_and_reports"
+                android:icon="@drawable/dashboard_and_reports"
+                android:showAsAction="always|withText"
+                android:title="@string/dashboard_and_reports_menu">
+            </item> -->
+           <!--  <item
+                android:id="@+id/menu_network_selfcare"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/home_selfcare"
+                android:title="@string/network_selfcare" >
+            </item>
+            <item
+                android:id="@+id/menu_workspace"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/home_menu_workspace"
+                android:title="@string/workspace">
+            </item> -->
+            <!-- <item
+                android:id="@+id/menu_operational_manual"
+                android:icon="@drawable/operational_manual"
+                android:showAsAction="always|withText"
+                android:title="@string/operational_manual_menu">3
+            </item> -->
+           <!--  <item
+                android:id="@+id/menu_appbase"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/app_base"
+                android:title="@string/appbase">
+            </item>
+            <item
+                android:id="@+id/menu_servicebase"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/service"
+                android:title="@string/servicebase">
+            </item>
+            <item
+                android:id="@+id/menu_knowledgebase"
+                android:icon="@drawable/knowladgebase"
+                android:showAsAction="always|withText"
+                android:title="@string/knowledgebase_menu">
+            </item>
+            <item
+                android:id="@+id/menu_myunit"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/training_learning"
+                android:title="@string/trainingandlearning">
+            </item> -->
+            <!-- <item
+                android:id="@+id/menu_myprofile"
+                android:showAsAction="always|withText"
+                android:icon="@drawable/my_profile"
+                android:title="@string/myprofile">
+            </item> -->
+           
+           <!--   <item
+                android:id="@+id/networkassistance_menu"
+                android:icon="@drawable/dashboard_and_reports"
+                android:showAsAction="always|withText"
+                android:title="@string/networkassistance">
+            </item> -->
+            
+            
+             
+            <!-- <item
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/user_logout"
+                android:showAsAction="always|withText"
+                android:title="@string/logout_menu">
+            </item> -->
+        </menu>
+    </item>
+
+</menu>

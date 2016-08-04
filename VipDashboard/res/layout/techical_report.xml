@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTechicalReportTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvTechicalReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="Techical Report"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlTechicalReportTitle" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/cgraph1"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/cgraph2"
+                android:layout_width="fill_parent"
+                android:layout_height="220dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/cgraph3"
+                android:layout_width="fill_parent"
+                android:layout_height="220dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tvtwoGTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:text="2G"
+                android:background="@drawable/header_bar"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/_2graph1"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_2graph2"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_2graph3"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_2graph4"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_2graph5"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_2graph6"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_2graph7"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tvthreeGTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:text="3G"
+                android:background="@drawable/header_bar"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/_3graph1"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:scrollbars="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/_3graph2"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph3"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph4"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph5"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph6"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph7"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph8"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph9"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph10"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph11"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph12"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph13"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph14"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph15"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph16"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/_3graph17"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tvLTEGTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:text="LTE"
+                android:background="@drawable/header_bar"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/ltegraph1"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/ltegraph2"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/ltegraph3"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/ltegraph4"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/ltegraph5"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/ltegraph6"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/ltegraph7"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+            <LinearLayout
+                android:id="@+id/ltegraph8"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+	<ProgressBar
+        android:id="@+id/pbTechicalGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+</RelativeLayout>

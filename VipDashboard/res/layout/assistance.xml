@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llAssistanceTab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/value_text"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvUserExperinceStart"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Live!"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserExperinceHistory"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserExperinceExperience"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Experience"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserExperinceAssistance"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_background_selected"
+            android:gravity="center"
+            android:text="Assistance"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:id="@+id/tabView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAssistanceTabHeader"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlNetworlDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvNetworlDoctor"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@color/header_text"
+                android:gravity="center"
+                android:text="Network Doctor"
+                android:textColor="@color/home_item_bg"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        
+
+        <RelativeLayout
+            android:id="@+id/rlAskaFriend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvAskaFriend"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@color/value_text"
+                android:gravity="center"
+                android:text="Ask a Friend"
+                android:textColor="@color/home_item_bg"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/rlContactUs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvContactUs"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@color/value_text"
+                android:gravity="center"
+                android:text="Contact Us"
+                android:textColor="@color/home_item_bg"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/rlLiveSupport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvLiveSupport"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@color/value_text"
+                android:gravity="center"
+                android:text="Live Support"
+                android:textColor="@color/home_item_bg"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/rlSelfService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvSelfService"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@color/value_text"
+                android:gravity="center"
+                android:text="Self Service"
+                android:textColor="@color/home_item_bg"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout> -->
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/vfAssistance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabView" >
+
+        <include
+            android:id="@+id/rlAssistanceNetworkDoctor"
+            layout="@layout/assistance_network_doctor" />
+
+        <include
+            android:id="@+id/rlAssistanceAskAFriend"
+            layout="@layout/assistance_aska_friend" />
+
+        <include
+            android:id="@+id/rlAssistanceLiveSupport"
+            layout="@layout/assistance_live_support" />
+    </ViewFlipper>
+
+</RelativeLayout>

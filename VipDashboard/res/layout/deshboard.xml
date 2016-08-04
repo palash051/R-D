@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    <RelativeLayout
+        android:id="@+id/rlDeshboardReportTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvDeshboardReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:text="DeshBoard"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+<!--     <RelativeLayout
+        android:id="@+id/rlSelectGraphStyle"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/rlDeshboardReportTitle"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/rgGroupStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/barGraphButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="PI Chart" />
+
+            <RadioButton
+                android:id="@+id/lineGraphButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speedometer" />
+        </RadioGroup>
+    </RelativeLayout> -->
+    <LinearLayout 
+        android:id="@+id/llDeshBoardLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"        
+        android:layout_below="@+id/rlDeshboardReportTitle"
+        android:orientation="vertical" >
+        <WebView
+        android:id="@+id/wvSpeedometer"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="fill_parent" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bar"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bManagement"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/management"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bTecnical"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/technical"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/bTroubleTicket"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/my_troubletickets"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bSendUnionCollaboration"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Send Union Collaboration"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

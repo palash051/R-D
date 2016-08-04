@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\R&amp;D\Undo\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="D:\R&amp;D\Undo\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-161b81bbb91e767f54852115e7f9b6d0343c638c.jar" />
+    </item>
+    <item
+        jar="D:\R&amp;D\Undo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="D:\R&amp;D\Undo\app\build\intermediates\pre-dexed\debug\classes-7e604c22e31f55aac09733998dd6c0f34ad47b45.jar" />
+    </item>
+    <item
+        jar="D:\R&amp;D\Undo\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="D:\R&amp;D\Undo\app\build\intermediates\pre-dexed\debug\classes-eb1993ac4caf7f5ca61f922d87c3cca97bf4dc0a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jahirul\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\R&amp;D\Undo\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-92d687ba5d85eb17025fd9940cbb836bffa248da.jar" />
+    </item>
+    <item
+        jar="D:\R&amp;D\Undo\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="D:\R&amp;D\Undo\app\build\intermediates\pre-dexed\debug\classes-d946dea27f37daa531ff9f3f22583d02211cd32b.jar" />
+    </item>
+    <item
+        jar="D:\R&amp;D\Undo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="D:\R&amp;D\Undo\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-ccd34f5ee89751bff20689ba5577803168a5b405.jar" />
+    </item>
+
+</items>

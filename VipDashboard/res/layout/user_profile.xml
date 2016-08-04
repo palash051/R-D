@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    <RelativeLayout
+        android:id="@+id/rlCollaborationMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvCollaborationMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Profile"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svUserProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlCollaborationMainTitle" >
+
+        <RelativeLayout
+            android:id="@+id/rluserProfileLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/row1" >
+                <ImageView 
+                    android:id="@+id/image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/user_icon" />
+                <RelativeLayout 
+                    android:id="@+id/header"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" >
+                    <TextView 
+                        android:id="@+id/fullname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="FullName"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView 
+                        android:id="@+id/account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account : "
+                        android:textColor="#000000"
+                        android:layout_below="@+id/fullname"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/accountName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/account"
+                        android:layout_alignBottom="@+id/account"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/account"
+                        android:text="Medium Text"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+            </TableRow>
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/view1"
+                android:layout_below="@+id/row1"
+                android:background="@drawable/header_bar"/>
+            <TableRow 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:id="@+id/row2">
+                <RelativeLayout 
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent">
+                    <TextView 
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Email : "
+                        android:textColor="@color/textColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvEmailName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvEmail"
+                        android:layout_alignBottom="@+id/tvEmail"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/tvEmail"
+                        android:text="Email Name"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:textColor="#000000" />
+                    <TextView 
+                        android:id="@+id/tvphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/tvEmail"
+                        android:text="Phone : "
+                        android:textColor="@color/textColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvphoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvphone"
+                        android:layout_alignBottom="@+id/tvphone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@+id/tvphone"
+                        android:text="Phone Num"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+            </TableRow>
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/row2"
+                android:id="@+id/view2"
+                android:layout_height="5dp"
+                android:background="@drawable/header_bar" />
+            <TableRow 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:id="@+id/row3">
+                <RelativeLayout 
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent">
+                    <TextView 
+                        android:id="@+id/tvDesignattion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Designation : "
+                        android:textColor="@color/textColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvDesignationName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvDesignattion"
+                        android:layout_alignBottom="@+id/tvDesignattion"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/tvDesignattion"
+                        android:text="Designation Name"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:textStyle="normal" />
+                    <TextView 
+                        android:id="@+id/tvDepartment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/tvDesignattion"
+                        android:text="Department : "
+                        android:textColor="@color/textColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvDeprtmentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvDepartment"
+                        android:layout_alignBottom="@+id/tvDepartment"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@+id/tvDepartment"
+                        android:text="Department Name"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+            </TableRow>
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/row3"
+                android:id="@+id/view3"
+                android:layout_height="5dp"
+                android:background="@drawable/header_bar" />
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/pbUserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+</RelativeLayout>

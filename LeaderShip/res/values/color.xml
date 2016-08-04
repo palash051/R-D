@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_diverder">#aeaeae</color>
+    <color name="transparent_20">#15000000</color>
+    <color name="application_top_header">#00285E</color>
+    <color name="application_top_header_title_text">#FFFFFF</color>
+    <color name="application_background">#FFFFFF</color>
+    <color name="blue">#3F48CC</color>
+    <color name="home_menu_item_text_color">#00285E</color>
+    <color name="header_text">#FFC000</color>
+    <color name="value_text">#00B050</color>
+    <color name="footer_notecolor">#FF003A</color>
+    <color name="selected_tab">#F48540</color>
+    <color name="unselected_tab">#4D78CA</color>
+    <color name="text_background_color">#70AD47</color>
+    <color name="tab_bg_normal">#557DCB</color>
+    <color name="sub_tab_bg_normal">#70AD47</color>
+    <color name="tab_bg_selected">#F4823B</color>
+    
+    <color name="list_item_normal">#00FFFFFF</color>
+    <color name="list_item_selected">#9FACACAC</color>
+
+</resources>

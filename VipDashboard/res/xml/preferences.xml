@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="MyNet Settings"
+    android:title="MyNet Settings" >
+
+    <PreferenceCategory android:title="Application Url" >
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Base Url"
+            android:key="pref_server_url"
+            android:summary="The text to display application server url"
+            android:title="Base Url" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

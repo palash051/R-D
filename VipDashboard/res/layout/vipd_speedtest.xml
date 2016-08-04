@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlMapsheaderTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/llmyexperience" >
+
+        <TextView
+            android:id="@+id/txtMapHeaderView"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/tabHeaderText"
+            android:gravity="center"
+            android:text="Speed Test"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llGageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.vipdashboard.app.customcontrols.GaugeView
+                android:id="@+id/gvSignalTestDownload"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvSignalTestDownloadTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gvSignalTestDownload"
+                android:layout_centerHorizontal="true"
+                android:text="Download"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.vipdashboard.app.customcontrols.GaugeView
+                android:id="@+id/gvSignalTestUpload"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvMyExperienceSignalStrenghtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gvSignalTestUpload"
+                android:layout_centerHorizontal="true"
+                android:text="Upload"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/trRowHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/header_text"
+        android:padding="3dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Result"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Your device(Kbps)"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp"
+            android:textStyle="bold" android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Speed"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trRowHeaderBottomBorder"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/tabTextColor" />
+
+    <TableRow
+        android:id="@+id/tvRowLatency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/tableRowColor"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tvSpeedTestLatencyTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Latency"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvSpeedTestLatencyYourDevice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvSpeedTestLatencyWiFiavg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tvRowLatencBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/tabTextColor" />
+
+    <TableRow
+        android:id="@+id/tvRowDownload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/tableRowColor"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tvSpeedTestDownloadTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Download"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvSpeedTestDownloadTitleYourDevice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvSpeedTestDownloadTitleWiFiavg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tvRowDownloadBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/tabTextColor" />
+
+    <TableRow
+        android:id="@+id/tvRowUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/tableRowColor"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tvSpeedTestUploadTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Upload"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/SpeedTestUploadYourDevice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/SpeedTestUploadWiFiavg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/tabTextColor"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/llLastOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvSpeedTestButton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/header_text"
+            android:gravity="center"
+            android:text="Speed Test"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvServiceTestButton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/header_text"
+            android:gravity="center"
+            android:text="Start Test"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+    <ProgressBar 
+        android:id="@+id/pbSpeedTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/custom_progrress_bar"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

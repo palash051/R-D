@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <SearchView
+        android:id="@+id/svCallMemoList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+     
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:divider="@color/list_diverder"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:scrollbars="vertical"
+        android:scrollingCache="false" />
+
+        <TextView
+            android:id="@+id/tvMemo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="No Call Memo Available"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:visibility="visible" />
+
+</LinearLayout>

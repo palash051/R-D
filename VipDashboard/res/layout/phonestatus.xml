@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svPhoneStatus"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/application_background"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbarStyle="insideOverlay" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/tabHeaderText"
+            android:gravity="center"
+            android:text="My Operator Service Summary"
+            android:textColor="@color/bottom_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Service State -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/labelStyleRight"
+                android:text="@string/tvServiceState"
+                android:textColor="@color/sub_header_text" />
+
+            <TextView
+                android:id="@+id/serviceState_info"
+                style="@style/textStyle"
+                android:textColor="@color/sub_header_text" />
+        </LinearLayout>
+        <!-- cell location -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/labelStyleRight"
+                android:text="@string/tvCellLocation"
+                android:textColor="@color/sub_header_text" />
+
+            <TextView
+                android:id="@+id/cellLocation_info"
+                style="@style/textStyle"
+                android:textColor="@color/sub_header_text" />
+        </LinearLayout>
+        <!-- Call State -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/labelStyleRight"
+                android:text="@string/tvCallState"
+                android:textColor="@color/sub_header_text" />
+
+            <TextView
+                android:id="@+id/callState_info"
+                style="@style/textStyle"
+                android:textColor="@color/sub_header_text" />
+        </LinearLayout>
+        <!-- Data Connection State -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/labelStyleRight"
+                android:text="@string/tvConnState"
+                android:textColor="@color/sub_header_text" />
+
+            <TextView
+                android:id="@+id/connectionState_info"
+                style="@style/textStyle"
+                android:textColor="@color/sub_header_text" />
+        </LinearLayout>
+        <!-- Signal leve -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/labelStyleRight"
+                android:text="@string/tvSignalLevel"
+                android:textColor="@color/sub_header_text" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    android:id="@+id/signalLevel"
+                    style="@style/progressStyle" />
+
+                <TextView
+                    android:id="@+id/signalLevelInfo"
+                    style="@style/textSmallStyle"
+                    android:textColor="@color/sub_header_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Data Activity -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/labelStyleRight"
+                android:text="@string/strData"
+                android:textColor="@color/sub_header_text" />
+
+            <ImageView
+                android:id="@+id/dataDirection"
+                style="@style/imageStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/device_info"
+            style="@style/labelStyleLeft"
+            android:textColor="@color/sub_header_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/paging_6_4" />
+    </LinearLayout>
+
+</ScrollView>

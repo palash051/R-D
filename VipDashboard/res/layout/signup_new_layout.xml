@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <!-- <RelativeLayout
+        android:id="@+id/rlSignUpHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tool_bar"
+        android:orientation="horizontal" >
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/rlSignUPTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bar" >
+
+        <TextView
+            android:id="@+id/tvCollaborationMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Signup to MUMTAZ CARE"
+            android:textColor="@color/header_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSignupMainContant"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSignUPTitle" >
+
+        <TextView
+            android:id="@+id/tvLoginMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Signup to Mumtaz Care is the easiest thing to do! Please enter below information and thats all for now."
+            android:textColor="#00B0F0"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLoginMessage"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:cursorVisible="true"
+           	android:textCursorDrawable="@null"
+            android:background="@drawable/signup_edittext_border"
+            android:gravity="center"
+            android:hint="Your Name"
+            android:inputType="text"
+            android:textColor="#000000"  
+            android:textSize="12sp"  >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etUserCompanyEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUserName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+            android:background="@drawable/signup_edittext_border"
+            android:gravity="center"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"  
+                android:textSize="12sp"  >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etUserPhoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUserCompanyEmail"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+            android:background="@drawable/signup_edittext_border"
+            android:gravity="center"
+            android:hint="Your Mobile number"
+            android:inputType="phone"
+            android:textColor="#000000"  
+                android:textSize="12sp"  >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvConditionMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUserPhoneNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="By Signing up, you agree to our"
+            android:textColor="#00B0F0"
+            android:textSize="12sp" />
+        <TextView 
+            android:id="@+id/tvTermsAndCondition"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvConditionMessage"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#00B0F0"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tvTermsAndCondition"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/sub_header_text"
+            android:text="Get me in soon!"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvbelowMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="A text message with a confirmation code will send to your phone number. We don`t use your phone number for any other purpose."
+            android:textColor="#00B0F0"
+            android:textSize="12sp" />
+    </RelativeLayout>
+<ProgressBar
+        android:id="@+id/pbSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="29dp"
+        android:visibility="gone" />
+</RelativeLayout>

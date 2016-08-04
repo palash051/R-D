@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_bg"
+    android:orientation="vertical" >
+
+    <com.shopper.app.custom.controls.CustomButton
+        android:id="@+id/bOnlineCheckout"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/cencel_basket_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/online_pay"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.shopper.app.custom.controls.CustomButton
+        android:id="@+id/bInhouseCheckout"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/cencel_basket_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/in_store_pay"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

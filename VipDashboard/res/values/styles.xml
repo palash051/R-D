@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="app_theme" parent="android:Theme.NoTitleBar" />
+
+    <style name="AppTheme" parent="Theme.Sherlock">
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/actionbar_up_button_background</item>
+        <item name="android:actionDropDownStyle">@style/MyDropDownItem</item>
+        <item name="actionDropDownStyle">@style/MyDropDownItem</item>
+        <item name="android:actionBarTabBarStyle">@style/Theme.app.tabbar.style</item>
+        <item name="actionBarTabBarStyle">@style/Widget.app.ActionBar.TabBar</item>
+    </style>
+    
+    <style name="Theme.app.tabbar.style" parent="@style/Theme.Sherlock.Light">
+	    <item name="android:background">#1364BD</item>
+	</style>
+	
+	<style name="Widget.app.ActionBar.TabBar" parent="Widget.Sherlock.ActionBar.TabBar">
+	    <item name="android:background">#1364BD</item>
+	</style>
+
+    <style name="AppTheme.ActionBarStyle" parent="Widget.Sherlock.ActionBar">
+        <item name="android:height">40dp</item>
+    </style>
+
+    <style name="MyDropDownItem" parent="Widget.Sherlock.Spinner.DropDown.ActionBar"></style>
+    
+    <style name="titleBarText">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="main_menu">
+        <item name="android:layout_width">255dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">35dip</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="main_menu_btnTop" parent="main_menu">
+        <item name="android:layout_marginTop">5dip</item>
+    </style>
+
+    <style name="main_menu_btnNormal" parent="main_menu">
+        <item name="android:layout_marginTop">12dip</item>
+    </style>
+
+    <style name="customtheme" parent="@android:style/Theme.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">#993399</item>
+    </style>
+
+    <style name="SpinnerDropDownItem">
+        <item name="android:textColor">#993399</item>
+    </style>
+
+    <style name="fade_animation"></style>
+
+    <style name="settinglistbackground" parent="AppTheme">
+        <item name="android:listViewStyle">@style/settingpreferencelistview</item>
+        <item name="android:checkboxStyle">@style/settingpreferencelistviewcheckbox</item>
+    </style>
+
+    <style name="settingpreferencelistview" parent="@android:style/Widget.ListView">
+        <item name="android:dividerHeight">1dip</item>
+    </style>
+
+    <style name="settingpreferencelistviewcheckbox" parent="android:Widget.CompoundButton.CheckBox"></style>
+
+    <style name="labelStyleRight">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="labelStyleLeft">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="textStyleCenter">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textSmallStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="progressStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:progress">15</item>
+        <item name="android:max">100</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+    </style>
+    
+    <style name="progressStyleCall">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">20dip</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>        
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:progress">15</item>
+        <item name="android:max">100</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+    </style>
+
+    <style name="imageStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:src">@drawable/nodata</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:maxHeight">32dip</item>
+        
+    </style>
+    
+    <style name="TransparentProgressDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@drawable/custom_progrress_bar</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="ListItem">
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+    </style>
+    
+    <style name="ProgressDialogTheam" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    
+    <style name="CustomAlertDialogStyle">
+	    <item name="android:bottomBright">#FFFFFF</item>
+	    <item name="android:bottomDark">#FFFFFF</item>
+	    <item name="android:bottomMedium">#FFFFFF</item>
+	    <item name="android:centerBright">#FFFFFF</item>
+	    <item name="android:centerDark">#FFFFFF</item>
+	    <item name="android:centerMedium">#FFFFFF</item>
+	    <item name="android:fullBright">#FFFFFF</item>
+	    <item name="android:fullDark">#FFFFFF</item>
+	    <item name="android:topBright">#FFFFFF</item>
+	    <item name="android:topDark">#FFFFFF</item>
+	</style>
+	
+    <style name="Widget"></style>
+
+    <style name="Widget.ProgressBar.CircularProgressBar" parent="Widget">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="progressColor">@color/circular_progress_default_progress</item>
+        <item name="hasShadow">true</item>
+        <item name="strokeWidth">35</item>
+        <item name="titleColor">@color/circular_progress_default_title</item>
+        <item name="subtitleColor">@color/circular_progress_default_subtitle</item>
+    </style>
+
+    <style name="Widget.ProgressBar.Holo.CircularProgressBar" parent="Widget.ProgressBar.CircularProgressBar">
+        <item name="hasShadow">false</item>
+        <item name="strokeWidth">5</item>
+    </style>
+    
+    
+    
+   <style name="main_button">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff3782c3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">70.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="item_copy">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/k_secondary_text_dark</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/light_drak</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="main_tab_bottom">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/tab_textcolor_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_pressed_xml</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="textDialogContent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textColorPrimaryDark</item>
+    </style>
+    <style name="findPwd">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/link_color</item>
+    </style>
+    <style name="textDialogCheckContent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textColorSecondaryDark</item>
+    </style>
+    <style name="main_tab_top">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/tab_textcolor_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">37.299988dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="loadingProgressBarStyle">
+        <item name="android:layout_width">60.0dip</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+ 
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/traffic_tou_bg_icon</item>
+    </style>
+    <style name="textLevelSmall">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="WindowTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#bb000000</item>
+        <item name="android:shadowRadius">2.75</item>
+    </style>
+ 
+  
+   
+
+    <style name="android_ListSeparator">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">25.0dip</item>
+    </style>
+    
+  
+    <style name="titleBarText">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="textDialogMessageContent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="titleBarButton">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColorPrimaryDark</item>
+    </style>
+    <style name="pm_top_info_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="item_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/k_primary_text_dark</item>
+    </style>
+    <style name="item_content">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/k_secondary_text_dark</item>
+    </style>
+    <style name="textLevelMiddle">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="TextAppearanceDialogWindowTitle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="DialogWindowTitle">
+        <item name="android:textAppearance">@style/TextAppearanceDialogWindowTitle</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="AliDialog">
+        <item name="android:windowBackground">@drawable/traffic_tanchu</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:popupBackground">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="ProgressDialog" parent="@style/AliDialog">
+        <item name="android:windowBackground">@color/tou_ming</item>
+    </style>
+    <style name="KPDProgressDialog" parent="@style/AliDialog" />
+
+    <style name="bottomBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="bottomButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/function_button_textcolor_selector</item>
+        <item name="android:background">@drawable/function_button_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="newbottomButton">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="main_title_text_img">
+        <item name="android:src">@drawable/main_title_image</item>
+    </style>
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+    <item name="android:bottomBright">@color/white</item>
+    <item name="android:bottomDark">@color/white</item>
+    <item name="android:bottomMedium">@color/white</item>
+    <item name="android:centerBright">@color/white</item>
+    <item name="android:centerDark">@color/white</item>
+    <item name="android:centerMedium">@color/white</item>
+    <item name="android:fullBright">@color/orange</item>
+    <item name="android:fullDark">@color/orange</item>
+    <item name="android:topBright">@color/blue</item>
+    <item name="android:topDark">@color/blue</item>
+</style>
+
+    <style name="MyTheme">
+    <item name="android:alertDialogStyle">@style/CustomDialogTheme</item>
+</style>
+</resources>

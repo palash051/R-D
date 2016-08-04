@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enterproducteanview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_bg"
+    android:orientation="vertical" >
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/basketAddingStatus"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/tool_bar"
+        android:text="@string/add_item"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/eanStatusView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="@string/indtastEan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <com.shopper.app.custom.controls.CustomEditText
+            android:id="@+id/eanEditView"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/eanStatusView"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/enter_ean_text_background"
+            android:gravity="right|center"
+            android:inputType="number"
+            android:maxLength="13"
+            android:paddingRight="6dp"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:windowSoftInputMode="stateHidden" >
+        </com.shopper.app.custom.controls.CustomEditText>
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/addFromEan"
+            android:layout_width="143dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/eanEditView"
+            android:layout_below="@+id/eanEditView"
+            android:background="@drawable/left_curved_button_bg_selected"
+            android:gravity="center"
+            android:text="@string/add_item"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/checkMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eanEditView"
+            android:layout_alignTop="@+id/eanEditView"
+            android:layout_toRightOf="@+id/eanEditView"
+            android:src="@drawable/checkmark"
+            tools:ignore="ContentDescription" />
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/addFromBasket"
+            android:layout_width="143dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/eanEditView"
+            android:layout_below="@+id/eanEditView"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/right_curved_button_bg"
+            android:text="@string/hentbon"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tool_bar" >
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/cancelProductEan"
+            android:layout_width="@dimen/bottom_bar_icon_width"
+            android:layout_height="@dimen/bottom_bar_icon_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/cancel"
+            android:contentDescription="Test tooltip"
+            android:paddingRight="7dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/doneProductEan"
+            android:layout_width="@dimen/bottom_bar_icon_width"
+            android:layout_height="@dimen/bottom_bar_icon_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="1dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/doneean_button_style"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

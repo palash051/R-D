@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+        android:id="@+id/llApkListView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="5dp"  >
+ 
+        <ListView
+            android:id="@+id/lvAppList"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:choiceMode="multipleChoice"
+            android:divider="#D9D9D9"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scrollbars="vertical"
+            android:scrollingCache="false" />
+ 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+ 
+            <RelativeLayout
+                android:id="@+id/rlClean"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/app_manager_backup" >
+ 
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Move To SdCard"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+ 
+            </RelativeLayout>
+ 
+<!--             <RelativeLayout
+                android:id="@+id/rlCheck"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                >
+ 
+               <CheckedTextView
+        android:id="@+id/apkListCheckedTextView"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center_vertical"
+            android:layout_margin="5dp"
+        android:padding="5dp"
+          android:paddingBottom="0dp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="15sp" />
+            </RelativeLayout> -->
+        </LinearLayout>
+    </LinearLayout>
+ 
+</LinearLayout>

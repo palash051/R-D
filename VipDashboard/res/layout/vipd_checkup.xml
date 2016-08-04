@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/application_background" >
+    <RelativeLayout 
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="BOOST"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+    <ProgressBar 
+        android:id="@+id/pbBackProcess"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlHeader" />
+    <RelativeLayout 
+        android:id="@+id/rlHeaderLogo"
+        android:layout_below="@id/pbBackProcess"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="#1D4999">
+        <TextView 
+            android:id="@+id/tvPointsCheck"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="60 points      can optimize"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone" />
+        <RelativeLayout 
+               android:id="@+id/rlPointsCheck"
+            android:layout_below="@id/tvPointsCheck"
+           	android:layout_width="fill_parent"
+           	android:layout_height="45dp"
+           	android:background="@drawable/optimize_border"
+           	android:layout_marginLeft="20dp"
+           	android:layout_marginTop="10dp"
+           	android:layout_marginRight="20dp"
+           	android:layout_centerVertical="true"
+           	android:layout_centerHorizontal="true" >
+           	<LinearLayout 
+           	    android:id="@+id/llOptimize"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content"
+           	    android:orientation="horizontal"
+           	    android:layout_centerHorizontal="true"
+           	    android:layout_centerVertical="true"
+           	    android:visibility="gone" >
+           	    <ImageView 
+           	        android:layout_width="25dp"
+           	        android:layout_height="25dp"
+           	        android:src="@drawable/optimize"/>
+           	    <TextView 
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:text="Optimize"
+           	        android:textColor="#000000"
+           	        android:textSize="16sp"
+           	        android:textStyle="normal"
+           	        android:layout_marginLeft="10dp"
+           	        android:layout_gravity="center_vertical"/>
+           	</LinearLayout>
+           	<LinearLayout 
+           	    android:id="@+id/llCancleOptimize"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content"
+           	    android:orientation="horizontal"
+           	    android:layout_centerHorizontal="true"
+           	    android:layout_centerVertical="true" >
+           	    <ImageView 
+           	        android:layout_width="25dp"
+           	        android:layout_height="25dp"
+           	        android:src="@drawable/cross"/>
+           	    <TextView 
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:text="Cancel Checkup"
+           	        android:textColor="#000000"
+           	        android:textSize="16sp"
+           	        android:textStyle="normal"
+           	        android:layout_marginLeft="10dp"
+           	        android:layout_gravity="center_vertical"/>
+           	</LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/rlCashClear"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rlHeaderLogo" >
+        
+         	<LinearLayout 
+           	    android:id="@+id/llErrorActiveOptimize"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content" >
+        
+        <ImageView 
+            android:id="@+id/ivError"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/error"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+        <ImageView 
+            android:id="@+id/ivActive"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/active"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/ivCashTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Found 1.7k of cache"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/llErrorActiveOptimize"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/rlMemoryClear"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rlCashClear" >
+        <ImageView 
+            android:id="@+id/ivError"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/error"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+        <ImageView 
+            android:id="@+id/ivActive"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/active"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+        <TextView 
+            android:id="@+id/ivMemoryTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="26 apps running, leaving 47% of your memory"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/ivError"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rlWifiEnable"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rlMemoryClear" >
+        <ImageView 
+            android:id="@+id/ivError"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/error"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+        <ImageView 
+            android:id="@+id/ivActive"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/active"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+        <TextView 
+            android:id="@+id/ivWifiTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="WI-fi Protection Enabled"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/ivError"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rlSafeBrowingEnable"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rlWifiEnable" >
+        
+          	<LinearLayout 
+           	    android:id="@+id/llSafeBrowingProtection"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/ivSafeBrowingError"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/error"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+        <ImageView 
+            android:id="@+id/ivSafeBrowingActive"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/active"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/ivSafeBrowingTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Safe Browing Enabled"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/llSafeBrowingProtection"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rlRealTimeProtectionEnable"
+        android:layout_below="@+id/rlSafeBrowingEnable"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp">
+        	<LinearLayout 
+           	    android:id="@+id/llRealTimeProtection"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/ivRealTimeProtectionError"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/error"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+        <ImageView 
+            android:id="@+id/ivRealTimeProtectionActive"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/active"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/ivRealTimeProtectionTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Real Time Protection Enabled"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/llRealTimeProtection"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color_gradient"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlWarRoomHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#4091FF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Khareef"
+            android:textColor="@color/khareeftextcolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="105dp"
+            android:gravity="right"
+            android:text="Live!"
+            android:textColor="@color/livetextcolor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvUserlistGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:scrollbars="vertical"
+        android:scrollingCache="false" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/tvMessageBoxGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" >
+
+        <EditText
+            android:id="@+id/etMessageGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/bSendMessageGroup"
+            android:hint="Message"
+            android:inputType="text"
+            android:lines="8"
+            android:maxLines="100"
+            android:minLines="1" >
+        </EditText>
+
+        <Button
+            android:id="@+id/bSendMessageGroup"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"            
+            android:layout_margin="2dp"
+            android:text="Send" />
+    </RelativeLayout>
+
+</LinearLayout>

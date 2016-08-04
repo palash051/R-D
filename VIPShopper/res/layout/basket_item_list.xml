@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_item_bg"
+    android:cacheColorHint="#FFFFFF"
+    android:orientation="vertical" >
+
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvBasketHeadingText"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:gravity="center_vertical"
+            android:background="@drawable/tool_bar"
+            android:text="@string/empty_basket"
+            android:textColor="@color/black" />
+
+    <ListView
+        android:id="@+id/lvBasket"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/list_item_bg"
+        android:divider="@color/list_row_divider"
+        android:dividerHeight="1.5dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+    <RelativeLayout
+        android:id="@+id/rlTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="1dp"
+        android:background="@color/list_row_divider"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|center_horizontal"
+            android:text="@string/total"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.shopper.app.custom.controls.CustomTextView
+            android:id="@+id/tvTotalPriceFraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="1dp"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBasketListBottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:background="@drawable/tool_bar" >
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/addEnterEanBasket"
+            android:layout_width="@dimen/bottom_bar_icon_width"
+            android:layout_height="@dimen/bottom_bar_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/bCheckoutBasket"
+            android:background="@drawable/basket_from_ean_background"
+            android:contentDescription=""
+            android:paddingRight="5dp" />
+
+        <com.shopper.app.custom.controls.CustomButton
+            android:id="@+id/bCheckoutBasket"
+            android:layout_width="@dimen/bottom_bar_icon_width"
+            android:layout_height="@dimen/bottom_bar_icon_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/tab_checkout"
+            android:enabled="false"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

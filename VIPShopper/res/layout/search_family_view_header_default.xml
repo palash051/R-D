@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_item_bg"
+     >
+
+    <com.shopper.app.custom.controls.CustomTextView
+        android:id="@+id/tvsearchfamilyHeadingText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar"
+        android:gravity="center_vertical"
+        android:text="@string/find_product"
+        android:textColor="@color/black"
+        style="?android:attr/listSeparatorTextViewStyle" />
+
+    <!-- <RelativeLayout
+        android:id="@+id/rlsearchfamilyinput"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/tool_bar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.shopper.app.custom.controls.CustomEditText
+            android:id="@+id/etsearchfamilyinput"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/round_edit_text"
+            android:drawableLeft="@drawable/toolbar_find"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:textSize="20sp" />
+    </RelativeLayout> -->
+
+</LinearLayout>

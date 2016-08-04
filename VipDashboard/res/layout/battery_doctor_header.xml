@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2182F9"
+    android:minHeight="420dp"
+    android:orientation="vertical" >
+    
+     <TextView
+         		android:id="@+id/tvOperationInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               	android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/llHeaderFirstPart"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlWifi"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivWifiNormal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/wifi_normal" />
+
+                <ImageView
+                    android:id="@+id/ivWifiSelected"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/wifi_selected"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llWifi"
+                android:gravity="center"
+                android:text="Wifi"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDataConnection"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llDataConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivDataConnectionNormal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/data_connection_normal" />
+
+                <ImageView
+                    android:id="@+id/ivDataConnectionSelected"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/data_connection_selected"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llDataConnection"
+                android:gravity="center"
+                android:text="Data"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBrigthness"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/llBrigthness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+                
+                <ImageView
+                    android:id="@+id/ivBrigthnessFirst"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/brightness_first" />
+
+                <ImageView
+                    android:id="@+id/ivBrigthnessSecond"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/brightness_two"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivBrigthnessThird"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/brightness_three" 
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/ivBrigthnessFourth"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/brightness_four"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/ivBrigthnessFifth"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/brightness_five" 
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llBrigthness"
+                android:gravity="center"
+                android:text="Brigthness"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlRingToneType"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llRigntone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivRingToneSlient"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/volume_slient" />
+
+                <ImageView
+                    android:id="@+id/ivRingToneOne"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/volume_one" 
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/ivRingToneTwo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/volume_two" 
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/ivRingToneThree"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/volume_three" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llRigntone"
+                android:gravity="center"
+                android:text="Volume"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llllHeaderSecondPart"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/llHeaderFirstPart"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlViberation"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llViberation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivViberationNormal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/viberation_normal" />
+
+                <ImageView
+                    android:id="@+id/ivViberationSelected"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/viberation_selected" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llViberation"
+                android:gravity="center"
+                android:text="Viberation"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:id="@+id/rlGPS"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/llGPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivGPSNormal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/gps_normal" />
+
+                <ImageView
+                    android:id="@+id/ivGPSSelected"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/gps_selected"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llGPS"
+                android:gravity="center"
+                android:text="GPS"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTimeout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+                
+                  <ImageView
+                      android:id="@+id/ivTimeoutFiftheenSeconds"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginTop="8dp"
+                      android:src="@drawable/timeout_fiftheenseconds" />
+
+                  <ImageView
+                      android:id="@+id/ivTimeoutThirtySeconds"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginTop="8dp"
+                      android:src="@drawable/timeout_thirtyseconds"
+                      android:visibility="gone" />
+
+                  <ImageView
+                      android:id="@+id/ivTimeoutOneMintue"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginTop="8dp"
+                      android:src="@drawable/timeout_one_min"
+                      android:visibility="gone" />
+
+                  <ImageView
+                      android:id="@+id/ivTimeoutTwoMinutes"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginTop="8dp"
+                      android:src="@drawable/timeout_twominutes"
+                      android:visibility="gone" />
+
+                  <ImageView
+                      android:id="@+id/ivTimeoutTenMinutes"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginTop="8dp"
+                      android:src="@drawable/timeout_tenminutes"
+                      android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivTimeoutThirtyMinutes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/timeout_thirtheenminutes"
+                    android:visibility="gone" />
+              
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llTimeout"
+                android:gravity="center"
+                android:text="Timeout"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlAirplaneMode"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/llAirplaneMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivAirplaneModeNormal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/airplane_mode_normal" />
+
+                <ImageView
+                    android:id="@+id/ivAirplaneModeSelected"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/airplane_mode_selected"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llAirplaneMode"
+                android:gravity="center"
+                android:text="Airplane Mode"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
